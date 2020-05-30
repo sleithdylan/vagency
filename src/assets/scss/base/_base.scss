@@ -129,3 +129,58 @@ h1 span {
 .content-text-desc {
   margin-bottom: 0.9em;
 }
+
+.services {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.left p {
+  color: #969a9e;
+}
+
+.left h2 {
+  padding: 0.9em 0;
+}
+
+.left .subtitle span {
+  color: #7552f6;
+}
+
+/* Hard Shadow */
+/* .card {
+  width: 100%;
+  margin: 2.8em auto;
+  padding: 2em;
+  background: white;
+  border-radius: 0.4em;
+  text-align: center;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+} */
+
+/* Soft Shadow */
+.card {
+  width: 100%;
+  margin: 2.8em auto;
+  padding: 2em;
+  background: white;
+  border-radius: 0.4em;
+  text-align: center;
+  box-shadow: horizontal vertical color;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.card h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  padding: 1em 0;
+}
+.card p {
+  color: #969a9e;
+  padding-bottom: 1.8em;
+}
