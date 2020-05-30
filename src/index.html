@@ -6,26 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vagency</title>
-  <link rel="stylesheet" href="./assets/css/pages/index.css">
-  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  <link rel="stylesheet" href="./assets/css/app.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
   <div class="container">
     <header>
       <a href="#">
-        <img src="./assets/images/png/vagency..png" class="logo" alt="">
+        <img src="./assets/images/png/vagency.png" class="logo" alt="">
       </a>
       <nav>
-        <box-icon name="menu-alt-right" class="menu" id="menu-btn" alt="open menu"></box-icon>
+        <i class="bx bx-menu-alt-right bx-md menu" id="menu-btn" alt="open menu"></i>
 
         <ul class="nav" id="nav">
-          <li>
+          <li class="exit" id="exit-btn">
             <a href="">
-              <box-icon name='x'></box-icon>
+              <i class='bx bx-x bx-md'></i>
             </a>
           </li>
-          <li>
+          <li class="active">
             <a href="">Home</a>
           </li>
           <li>
@@ -39,12 +39,28 @@
           </li>
         </ul>
 
-        <a href="" class="btn"></a>
-
       </nav>
     </header>
   </div>
-  <script src="./assets/js/app.js"></script>
+  <div class="container hero">
+    <div class="flex">
+      <div class="col content-text-hero">
+        <h1 class="title">
+          <span>Think the Design,</span>
+          <span>Design the Thinking</span>
+        </h1>
+        <p class="content-text-desc">A design agency shaping ideas into product. We help startup and enterprises invent,
+          build and launch their
+          next
+          product.</p>
+        <a href="#" class="btn btn-primary">Estimate Project</a>
+      </div>
+      <div class="col content-visual">
+        <img src="./assets/images/svg/startup_.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

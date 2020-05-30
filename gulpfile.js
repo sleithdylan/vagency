@@ -173,8 +173,10 @@ gulp.task('serve', () => {
     server: {
       baseDir: ['dist'],
     },
+
     port: 3000,
     open: false,
+    notify: false,
   });
 });
 
