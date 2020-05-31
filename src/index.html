@@ -8,7 +8,8 @@
   <title>Vagency</title>
   <link rel="stylesheet" href="./assets/css/app.css">
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 </head>
 
 <body>
@@ -64,26 +65,27 @@
   </div>
   <div class="container services">
     <div class="flex">
-      <div class="left content-services-text">
+      <div class="left content-services-text" data-aos="fade-up">
         <p>Our Capabilities</p>
         <h2 class="subtitle">Having attractive services has never been <span>easier.</span></h2>
       </div>
-      <p class="content-services-desc">We're brand strategy and digital design agency, building brands that matter in
+      <p class="content-services-desc" data-aos="fade-up">We're brand strategy and digital design agency, building
+        brands that matter in
         culuture with more than ten
         years of knowledge.</p>
     </div>
     <div class="services-cards">
-      <div class="card">
+      <div class="card" data-aos="flip-down">
         <img src="./assets/images/svg/ui_design_.svg" class="service-img" alt="">
         <h3 class="primary">UI/UX Design</h3>
         <p>Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="flip-down" data-aos-delay="500">
         <img src="./assets/images/svg/web_development_.svg" class="service-img" alt="">
         <h3 class="primary">Development</h3>
         <p>HTML/CSS, JavaScript Animation, WordPress, WordPress Plugin</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="flip-down" data-aos-delay="1000">
         <img src="./assets/images/svg/designer_.svg" class="service-img" alt="">
         <h3 class="primary">Branding</h3>
         <p>Visual Identity, Stationary Kit, Marketing Materials, Illustration Set, Character Design</p>
@@ -92,6 +94,16 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: "ease-in-out",
+      once: true,
+      duration: 1000
+
+    });
+
+  </script>
 </body>
 
 </html>

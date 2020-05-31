@@ -23,6 +23,6 @@ tl.from('.stagger', { y: 50, opacity: 0, stagger: 0.7 }, '-=.7') // Fade Up
   .from('.content-visual', { scaleX: 0.8, scaleY: 0.8, opacity: 0 }, '-=1'); // Fade Up with Delay
 
 // ScrollReveal
-ScrollReveal().reveal('.content-services-text');
-ScrollReveal().reveal('.content-services-desc');
-ScrollReveal().reveal('.card', { delay: 400 });
+// ScrollReveal().reveal('.content-services-text');
+// ScrollReveal().reveal('.content-services-desc');
+// ScrollReveal().reveal('.card', { delay: 400 });

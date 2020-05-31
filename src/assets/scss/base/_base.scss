@@ -324,7 +324,7 @@ h1 span {
     display: flex;
   }
   .content-text-hero {
-    width: 70%;
+    width: 100%;
     text-align: left;
     align-self: center;
     font-size: 1.2em;
@@ -337,7 +337,7 @@ h1 span {
   header,
   .hero,
   .services {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -355,25 +355,28 @@ h1 span {
 
   .content-services-text {
     font-size: 1.2em;
-    width: 30%;
+    // width: 35%;
     // padding-bottom: 3em;
     text-align: left;
   }
   .content-services-desc {
-    width: 60%;
+    width: 100%;
+    padding-left: 3em;
     text-align: left;
     align-self: center;
   }
   .content-visual {
-    width: 100%;
+    align-self: center;
+    width: 125%;
   }
   .services-cards {
     display: flex;
+    height: 100%;
   }
   /* Soft Shadow */
   .card {
-    width: 80%;
-    margin: 2.8em 1.2em;
+    width: 30%;
+    margin: 2.8em auto;
     padding: 2em;
     background: white;
     border-radius: 0.4em;
@@ -381,6 +384,7 @@ h1 span {
     box-shadow: horizontal vertical color;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   }
+
   .card .service-img {
     width: 60%;
     margin: 0 auto;
