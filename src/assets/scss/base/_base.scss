@@ -99,7 +99,7 @@ h1 span {
   font-family: 'Playfair Display', sans-serif;
   font-weight: 700;
   /* Used for a swipe effect in GSAP */
-  // clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 
 .btn {
@@ -114,7 +114,7 @@ h1 span {
 .btn-primary {
   background: #7552f6;
   color: white;
-  border-radius: 25px;
+  border-radius: 50px;
   vertical-align: center;
 }
 .btn-primary:hover {
@@ -147,16 +147,9 @@ h1 span {
   color: #7552f6;
 }
 
-/* Hard Shadow */
-/* .card {
-  width: 100%;
-  margin: 2.8em auto;
-  padding: 2em;
-  background: white;
-  border-radius: 0.4em;
-  text-align: center;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
-} */
+.content-services-text {
+  padding-bottom: 3em;
+}
 
 /* Soft Shadow */
 .card {
@@ -183,4 +176,162 @@ h1 span {
 .card p {
   color: #969a9e;
   padding-bottom: 1.8em;
+}
+
+@media (min-width: 576px) {
+  /* Hides Hamburger Menu */
+  .menu,
+  .exit {
+    display: none;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  header {
+    padding: 0.1em;
+  }
+
+  ul.nav {
+    visibility: unset;
+    opacity: 1;
+    background: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: unset;
+    height: auto;
+  }
+
+  ul.nav li a {
+    font-size: 0.9em;
+    padding: 0 1em;
+    font-weight: normal;
+  }
+
+  .content-text-hero {
+    width: 65%;
+    font-size: 1.1em;
+  }
+
+  .content-visual {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .content-services-text {
+    font-size: 1.1em;
+    width: 75%;
+    margin: 0 auto;
+  }
+  /* Soft Shadow */
+  .card {
+    width: 90%;
+    margin: 2.8em auto;
+    padding: 2em;
+    background: white;
+    border-radius: 0.4em;
+    text-align: center;
+    box-shadow: horizontal vertical color;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 0.1em;
+  }
+
+  ul.nav {
+    visibility: unset;
+    opacity: 1;
+    background: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: unset;
+    height: auto;
+  }
+
+  ul.nav li a {
+    font-size: 0.9em;
+    padding: 0 1em;
+    font-weight: normal;
+  }
+  .content-services-text {
+    // width: 55%;
+    margin: 0 auto;
+  }
+
+  .content-text-hero {
+    width: 65%;
+    font-size: 1.1em;
+  }
+  /* Soft Shadow */
+  .card {
+    width: 80%;
+    margin: 2.8em auto;
+    padding: 2em;
+    background: white;
+    border-radius: 0.4em;
+    text-align: center;
+    box-shadow: horizontal vertical color;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 1.3em;
+    text-align: center;
+  }
+  .flex {
+    display: flex;
+  }
+  .content-text-hero {
+    width: 70%;
+    text-align: left;
+    align-self: center;
+    font-size: 1.2em;
+  }
+
+  .content-text-desc {
+    margin-bottom: 0.9em;
+  }
+
+  header,
+  .hero,
+  .services {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .left p {
+    color: #969a9e;
+  }
+
+  .left h2 {
+    padding: 0.9em 0;
+  }
+
+  .left .subtitle span {
+    color: #7552f6;
+  }
+
+  .content-services-text {
+    font-size: 1.2em;
+    width: 20%;
+    padding-bottom: 3em;
+    text-align: left;
+  }
+  .content-services-desc {
+    width: 40%;
+    text-align: left;
+  }
+  .content-visual {
+    width: 100%;
+  }
+  .services-cards {
+    display: flex;
+  }
 }
