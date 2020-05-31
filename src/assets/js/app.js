@@ -16,6 +16,13 @@ exit.addEventListener('click', () => {
 // Create GSAP Instance
 var tl = gsap.timeline({ defaults: { duration: 1 } });
 
-tl.from('.stagger', { y: 50, opacity: 0, stagger: 0.7 }, '-=.4') // Fade Up
+tl.from('.logo', { x: -50, opacity: 0 }, '-=.1');
+
+tl.from('.stagger', { y: 50, opacity: 0, stagger: 0.7 }, '-=.7') // Fade Up
   .to('h1 span', { clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)' }, '-=.8') // Swipe with Delay
   .from('.content-visual', { scaleX: 0.8, scaleY: 0.8, opacity: 0 }, '-=1'); // Fade Up with Delay
+
+// ScrollReveal
+ScrollReveal().reveal('.content-services-text');
+ScrollReveal().reveal('.content-services-desc');
+ScrollReveal().reveal('.card', { delay: 400 });

@@ -111,6 +111,9 @@ h1 span {
   margin-top: 1em;
 }
 
+.primary {
+  color: #2b2a35;
+}
 .btn-primary {
   background: #7552f6;
   color: white;
@@ -148,7 +151,7 @@ h1 span {
 }
 
 .content-services-text {
-  padding-bottom: 3em;
+  // padding-bottom: 3em;
 }
 
 /* Soft Shadow */
@@ -235,6 +238,21 @@ h1 span {
     box-shadow: horizontal vertical color;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   }
+  .card .service-img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .card h3 {
+    font-size: 1.3em;
+  }
+  .content-services-text {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .content-services-desc {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -259,7 +277,11 @@ h1 span {
     font-weight: normal;
   }
   .content-services-text {
-    // width: 55%;
+    width: 55%;
+    margin: 0 auto;
+  }
+  .content-services-desc {
+    width: 65%;
     margin: 0 auto;
   }
 
@@ -267,6 +289,7 @@ h1 span {
     width: 65%;
     font-size: 1.1em;
   }
+
   /* Soft Shadow */
   .card {
     width: 80%;
@@ -277,6 +300,18 @@ h1 span {
     text-align: center;
     box-shadow: horizontal vertical color;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .card .service-img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .card h3 {
+    font-size: 1.3em;
+  }
+  .card p {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -320,18 +355,37 @@ h1 span {
 
   .content-services-text {
     font-size: 1.2em;
-    width: 20%;
-    padding-bottom: 3em;
+    width: 30%;
+    // padding-bottom: 3em;
     text-align: left;
   }
   .content-services-desc {
-    width: 40%;
+    width: 60%;
     text-align: left;
+    align-self: center;
   }
   .content-visual {
     width: 100%;
   }
   .services-cards {
     display: flex;
+  }
+  /* Soft Shadow */
+  .card {
+    width: 80%;
+    margin: 2.8em 1.2em;
+    padding: 2em;
+    background: white;
+    border-radius: 0.4em;
+    text-align: center;
+    box-shadow: horizontal vertical color;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  .card .service-img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 2.7em;
   }
 }
