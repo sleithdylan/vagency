@@ -390,6 +390,34 @@ h1 span {
     width: 80%;
     margin: 0 auto;
   }
+  .nav__item a {
+    position: relative;
+    transition: transform 0.5s ease;
+  }
+
+  .nav__item a:hover {
+    color: #7552f6;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+
+  .nav__item a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    right: 14px;
+    height: 2px;
+    background-color: #7552f6;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+
+  .nav__item:hover a::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
 }
 
 @media (min-width: 992px) {
