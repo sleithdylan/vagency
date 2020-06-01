@@ -1,3 +1,12 @@
+import { gsap } from 'gsap';
+import AOS from 'aos';
+
+AOS.init({
+  easing: 'ease-in-out',
+  once: true,
+  duration: 1000,
+});
+
 // Open/Close Hamburger Menu
 const get = element => document.getElementById(element);
 
