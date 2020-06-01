@@ -77,11 +77,11 @@ nav ul li a {
   color: #2b2a35;
 }
 
-ul.nav .active a {
+ul.nav .nav__item--active a {
   color: #7552f6;
 }
 
-.exit a {
+.nav__exit a {
   position: absolute;
   top: -5px;
   right: -5px;
@@ -99,6 +99,7 @@ h1 span {
   font-family: 'Playfair Display', sans-serif;
   font-weight: 700;
   /* Used for a swipe effect in GSAP */
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 
@@ -111,25 +112,26 @@ h1 span {
   margin-top: 1em;
 }
 
-.primary {
+.grey {
   color: #2b2a35;
 }
-.btn-primary {
+.btn--primary {
   background: #7552f6;
   color: white;
   border-radius: 50px;
   vertical-align: center;
 }
-.btn-primary:hover {
+.btn--primary:hover {
   background: #9897ee;
 }
 
-.content-text-hero {
+.hero__content {
   width: 65%;
   margin: 0 auto;
+  align-items: flex-end;
 }
 
-.content-text-desc {
+.hero__description {
   margin-bottom: 0.9em;
 }
 
@@ -146,16 +148,18 @@ h1 span {
   padding: 0.9em 0;
 }
 
-.left .subtitle span {
+.left .services__subtitle span {
   color: #7552f6;
 }
 
-.content-services-text {
-  // padding-bottom: 3em;
+.services__content-main {
+  // font-size: 1.1em;
+  width: 75%;
+  margin: 0 auto;
 }
 
 /* Soft Shadow */
-.card {
+.services__card {
   width: 90%;
   margin: 2.8em auto;
   padding: 2em;
@@ -164,23 +168,23 @@ h1 span {
   text-align: center;
   box-shadow: horizontal vertical color;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-  // border-top: #7552f6 5px solid;
   border-top: #7552f6 6px solid;
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.card:hover {
-  border-top: #7552f6 6px solid;
-  transition: 0.2s ease-in-out;
+.services__card:hover {
+  border-top: #9897ee 6px solid;
+  // box-shadow: 10px 10px 30px rgba(117, 82, 246, 0.1);
+  transition: all 0.2s ease-in-out;
 }
 
-.sponsors {
+.hero__sponsors {
   display: flex;
   width: 95%;
-  margin: 2.8em auto;
+  margin: 2em auto;
   // padding: 2em;
   // padding: 1em 0;
 }
-.sponsor-img {
+.hero__sponsor-img {
   width: 100%;
   margin: 0 auto;
 }
@@ -234,25 +238,30 @@ h1 span {
   transition: 0.2s ease-in-out;
 }
 
-.service-img {
+.services__service-img {
   width: 70%;
   margin: 0 auto;
 }
 
-.card h3 {
+.services__card h3 {
   font-size: 1.3em;
   font-weight: 700;
   padding: 1em 0;
 }
-.card p {
+.services__card p {
   color: #969a9e;
   padding-bottom: 1.8em;
+}
+
+.services__content-description {
+  width: 70%;
+  margin: 0 auto;
 }
 
 @media (min-width: 576px) {
   /* Hides Hamburger Menu */
   .menu,
-  .exit {
+  .nav__exit {
     display: none;
   }
 
@@ -281,22 +290,22 @@ h1 span {
     font-weight: normal;
   }
 
-  .content-text-hero {
+  .hero__content {
     width: 65%;
     font-size: 1.1em;
   }
 
-  .content-visual {
+  .hero__content-visual {
     width: 100%;
     margin: 0 auto;
   }
-  .content-services-text {
+  .services__content-main {
     font-size: 1.1em;
     width: 75%;
     margin: 0 auto;
   }
   /* Soft Shadow */
-  .card {
+  .services__card {
     width: 90%;
     margin: 2.8em auto;
     padding: 2em;
@@ -306,18 +315,18 @@ h1 span {
     box-shadow: horizontal vertical color;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   }
-  .card .service-img {
+  .services__card .services__service-img {
     width: 45%;
     margin: 0 auto;
   }
-  .card h3 {
+  .services__card h3 {
     font-size: 1.3em;
   }
-  .content-services-text {
+  .services__content-main {
     width: 55%;
     margin: 0 auto;
   }
-  .content-services-desc {
+  .services__content-description {
     width: 70%;
     margin: 0 auto;
   }
@@ -344,22 +353,22 @@ h1 span {
     padding: 0 1em;
     font-weight: normal;
   }
-  .content-services-text {
+  .services__content-main {
     width: 55%;
     margin: 0 auto;
   }
-  .content-services-desc {
+  .services__content-description {
     width: 65%;
     margin: 0 auto;
   }
 
-  .content-text-hero {
+  .hero__content {
     width: 65%;
     // font-size: 1.1em;
   }
 
   /* Soft Shadow */
-  .card {
+  .services__card {
     width: 90%;
     margin: 2.8em auto;
     padding: 2em;
@@ -370,14 +379,14 @@ h1 span {
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   }
 
-  .card .service-img {
+  .services__card .services__service-img {
     width: 40%;
     margin: 0 auto;
   }
-  .card h3 {
+  .services__card h3 {
     font-size: 1.3em;
   }
-  .card p {
+  .services__card p {
     width: 80%;
     margin: 0 auto;
   }
@@ -391,14 +400,14 @@ h1 span {
   .flex {
     display: flex;
   }
-  .content-text-hero {
+  .hero__content {
     width: 100%;
     text-align: left;
     align-self: center;
     // font-size: 1.1em;
   }
 
-  .content-text-desc {
+  .hero__description {
     margin-bottom: 0.9em;
   }
 
@@ -409,6 +418,21 @@ h1 span {
     // margin: 0 auto;
   }
 
+  .hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero__sponsors {
+    display: flex;
+    width: 95%;
+    margin: 4em auto 0;
+    // padding: 2em;
+    // padding: 1em 0;
+  }
+
   .left p {
     color: #969a9e;
   }
@@ -417,33 +441,33 @@ h1 span {
     padding: 0.9em 0;
   }
 
-  .left .subtitle span {
+  .left .services__subtitle span {
     color: #7552f6;
   }
 
-  .content-services-text {
+  .services__content-main {
     // font-size: 1.2em;
     // width: 35%;
     // padding-bottom: 3em;
     text-align: left;
     padding-right: 1em;
   }
-  .content-services-desc {
+  .services__content-description {
     width: 100%;
     padding-left: 1em;
     text-align: left;
     align-self: center;
   }
-  .content-visual {
+  .hero__content-visual {
     align-self: center;
     width: 100%;
   }
-  .services-cards {
+  .services__cards {
     display: flex;
     height: 100%;
   }
   /* Soft Shadow */
-  .card {
+  .services__card {
     width: 30%;
     margin: 2.8em auto;
     padding: 2em;
@@ -454,11 +478,11 @@ h1 span {
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   }
 
-  .card .service-img {
+  .services__card .services__service-img {
     width: 60%;
     margin: 0 auto;
   }
-  .title {
+  .hero__title {
     font-size: 2.7em;
   }
 }
@@ -471,14 +495,14 @@ h1 span {
   .flex {
     display: flex;
   }
-  .content-text-hero {
-    width: 100%;
+  .hero__content {
+    width: 90%;
     text-align: left;
     align-self: center;
     // font-size: 1.1em;
   }
 
-  .content-text-desc {
+  .hero__description {
     margin-bottom: 0.9em;
   }
 
@@ -497,33 +521,33 @@ h1 span {
     padding: 0.9em 0;
   }
 
-  .left .subtitle span {
+  .left .services__subtitle span {
     color: #7552f6;
   }
 
-  .content-services-text {
+  .services__content-main {
     // font-size: 1.2em;
     // width: 35%;
     // padding-bottom: 3em;
     padding-right: 1em;
     text-align: left;
   }
-  .content-services-desc {
+  .services__content-description {
     width: 100%;
     padding-left: 1em;
     text-align: left;
     align-self: center;
   }
-  .content-visual {
+  .hero__content-visual {
     align-self: center;
     width: 100%;
   }
-  .services-cards {
+  .services__cards {
     display: flex;
     height: 100%;
   }
   /* Soft Shadow */
-  .card {
+  .services__card {
     width: 30%;
     margin: 2.8em auto;
     padding: 2em;
@@ -535,17 +559,11 @@ h1 span {
     transition: 0.2s ease-in-out;
   }
 
-  .card:hover {
-    border-top: #9897ee 6px solid;
-    transition: 0.2s ease-in-out;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-  }
-
-  .card .service-img {
+  .services__card .services__service-img {
     width: 60%;
     margin: 0 auto;
   }
-  .title {
+  .hero__title {
     font-size: 2.7em;
   }
 }
