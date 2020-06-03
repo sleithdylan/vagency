@@ -198,6 +198,35 @@ h1 span {
   transition: all 0.2s ease-in-out;
 }
 
+/* Soft Shadow */
+.testimonials__card {
+  width: 90%;
+  margin: 2.8em auto;
+  // padding: 2em;
+  background: white;
+  border-radius: 0.4em;
+  text-align: center;
+  box-shadow: horizontal vertical color;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-top: #7552f6 6px solid;
+  transition: all 0.2s ease-in-out;
+}
+
+.testimonials__card span img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white;
+  margin-top: -2em;
+  border-radius: 50%;
+  background: #e6c9ff;
+  margin-left: auto;
+  margin-right: auto;
+  border: #7552f6 3px solid;
+  left: 0;
+  right: 0;
+}
+
 .hero__sponsors {
   display: flex;
   width: 95%;
@@ -272,6 +301,20 @@ h1 span {
 .services__card p {
   color: #969a9e;
   padding-bottom: 1.8em;
+}
+.testimonials__card h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+  padding: 2em 0 0.5em;
+}
+.testimonials__card h4 {
+  // font-size: 1.1em;
+  font-weight: 700;
+  padding: 0 0 1em;
+}
+.testimonials__card p {
+  color: #969a9e;
+  padding: 0 1.8em 3em;
 }
 
 .services__content-description {
@@ -377,6 +420,45 @@ h1 span {
   .services__card h3 {
     font-size: 1.3em;
   }
+  /* Soft Shadow */
+  .testimonials__card {
+    width: 90%;
+    margin: 2.8em auto;
+    // padding: 2em;
+    background: white;
+    border-radius: 0.4em;
+    text-align: center;
+    box-shadow: horizontal vertical color;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonials__card h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 2em 0 0.5em;
+  }
+  .testimonials__card h4 {
+    // font-size: 1.1em;
+    font-weight: 700;
+    padding: 0 0 1em;
+  }
+  .testimonials__card p {
+    color: #969a9e;
+    padding: 0 1.8em 3em;
+  }
+  .testimonials__card span img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: white;
+    margin-top: -2em;
+    border-radius: 50%;
+    background: #e6c9ff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
   .services__content-main {
     width: 55%;
     margin: 0 auto;
@@ -462,6 +544,45 @@ h1 span {
   .services__card p {
     width: 80%;
     margin: 0 auto;
+  }
+  /* Soft Shadow */
+  .testimonials__card {
+    width: 90%;
+    margin: 2.8em auto;
+    // padding: 2em;
+    background: white;
+    border-radius: 0.4em;
+    text-align: center;
+    box-shadow: horizontal vertical color;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonials__card h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 2em 0 0.5em;
+  }
+  .testimonials__card h4 {
+    // font-size: 1.1em;
+    font-weight: 700;
+    padding: 0 0 1em;
+  }
+  .testimonials__card p {
+    color: #969a9e;
+    padding: 0 1.8em 3em;
+  }
+  .testimonials__card span img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: white;
+    margin-top: -2em;
+    border-radius: 50%;
+    background: #e6c9ff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
   }
   .nav__item a {
     position: relative;
@@ -572,6 +693,49 @@ h1 span {
     margin: 0 auto;
   }
 
+  .testimonials__cards {
+    display: flex;
+  }
+  /* Soft Shadow */
+  .testimonials__card {
+    width: 90%;
+    margin: 2.8em 1em;
+    padding: 2em;
+    background: white;
+    border-radius: 0.4em;
+    text-align: center;
+    box-shadow: horizontal vertical color;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonials__card h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 2em 0 0.5em;
+  }
+  .testimonials__card h4 {
+    // font-size: 1.1em;
+    font-weight: 700;
+    padding: 0 0 1em;
+  }
+  .testimonials__card p {
+    color: #969a9e;
+    padding: 0 1.8em 3em;
+  }
+  .testimonials__card span img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: white;
+    margin-top: -4em;
+    border-radius: 50%;
+    background: #e6c9ff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
   .projects__work {
     display: flex;
     flex-wrap: wrap;
@@ -612,6 +776,7 @@ h1 span {
     display: flex;
     height: 100%;
   }
+
   /* Soft Shadow */
   .services__card {
     width: 30%;
@@ -660,7 +825,8 @@ h1 span {
   header,
   .hero,
   .services,
-  .projects {
+  .projects,
+  .testimonials {
     width: 75%;
     margin: 0 auto;
   }
@@ -766,6 +932,7 @@ h1 span {
     width: 60%;
     margin: 0 auto;
   }
+
   .hero__title {
     font-size: 2.7em;
   }
