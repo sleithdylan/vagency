@@ -154,6 +154,9 @@ h1 span {
 .left .projects__subtitle span {
   color: #7552f6;
 }
+.left .testimonials__subtitle span {
+  color: #7552f6;
+}
 
 .services__content-main {
   // font-size: 1.1em;
@@ -164,6 +167,16 @@ h1 span {
   // font-size: 1.1em;
   width: 75%;
   margin: 0 auto;
+}
+.testimonials__content-main {
+  // font-size: 1.1em;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.testimonials__qoute {
+  color: #7552f6;
+  padding-bottom: 0.5em;
 }
 
 /* Soft Shadow */
@@ -341,6 +354,11 @@ h1 span {
     width: 75%;
     margin: 0 auto;
   }
+  .testimonials__content-main {
+    // font-size: 1.1em;
+    width: 75%;
+    margin: 0 auto;
+  }
   /* Soft Shadow */
   .services__card {
     width: 90%;
@@ -365,6 +383,11 @@ h1 span {
   }
   .projects__content-main {
     width: 55%;
+    margin: 0 auto;
+  }
+  .testimonials__content-main {
+    // font-size: 1.1em;
+    width: 75%;
     margin: 0 auto;
   }
   .services__content-description {
@@ -400,6 +423,11 @@ h1 span {
   }
   .projects__content-main {
     width: 55%;
+    margin: 0 auto;
+  }
+  .testimonials__content-main {
+    // font-size: 1.1em;
+    width: 75%;
     margin: 0 auto;
   }
   .services__content-description {
@@ -486,7 +514,8 @@ h1 span {
 
   header,
   .hero,
-  .services {
+  .services,
+  .testimonials {
     // width: 70%;
     // margin: 0 auto;
   }
@@ -520,7 +549,9 @@ h1 span {
   .left .projects__subtitle span {
     color: #7552f6;
   }
-
+  .left .testimonials__subtitle span {
+    color: #7552f6;
+  }
   .services__content-main {
     // font-size: 1.2em;
     // width: 35%;
@@ -534,6 +565,11 @@ h1 span {
     // padding-bottom: 3em;
     text-align: left;
     // padding-right: 1em;
+  }
+  .testimonials__content-main {
+    // font-size: 1.1em;
+    width: 75%;
+    margin: 0 auto;
   }
 
   .projects__work {
@@ -595,6 +631,7 @@ h1 span {
 
   .projects__cta {
     align-self: center;
+    width: 19%;
   }
   .hero__title {
     font-size: 2.7em;
@@ -642,7 +679,9 @@ h1 span {
   .left .projects__subtitle span {
     color: #7552f6;
   }
-
+  .left .testimonials__subtitle span {
+    color: #7552f6;
+  }
   .services__content-main {
     // font-size: 1.2em;
     // width: 35%;
@@ -652,10 +691,15 @@ h1 span {
   }
   .projects__content-main {
     // font-size: 1.2em;
-    width: 80%;
+    width: 100%;
     // padding-bottom: 3em;
     text-align: left;
     // padding-right: 1em;
+  }
+  .testimonials__content-main {
+    // font-size: 1.1em;
+    width: 75%;
+    margin: 0 auto;
   }
 
   .projects__work {
@@ -680,8 +724,15 @@ h1 span {
   .projects-img {
     border-radius: 0.4em;
     background-position: center;
+    transition: transform 0.2s ease-in-out;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
+  }
+
+  .projects-img:hover {
+    transform: scale(1.05);
+    background-color: rgba(152, 151, 238, 0.8);
   }
 
   .pro .services__content-description {
@@ -717,5 +768,9 @@ h1 span {
   }
   .hero__title {
     font-size: 2.7em;
+  }
+  .projects__cta {
+    align-self: center;
+    width: 22%;
   }
 }
