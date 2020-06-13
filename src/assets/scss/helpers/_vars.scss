@@ -1,0 +1,81 @@
+//- Base
+//- ----------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+$font-family-base: 'Lato', sans-serif !default;
+$font-family-accent: 'Playfair Display', sans-serif !default;
+$base-font-size: 1em !default;
+$base-line-height: 1.625em !default;
+$body-font-weight: 400 !default;
+$font-size-sm: ($base-font-size * 0.857) !default;
+
+//- Colors
+//- ----------------------------------------------
+
+$color-primary: #7552f6 !default;
+$color-primary-lighten: #9897ee !default;
+$color-light: #ffffff !default;
+$color-dark: #2b2a35 !default;
+$color-dark-lighten: #969a9e !default;
+
+$color-success: #24d9b0 !default;
+$color-info: #00bbfa !default;
+$color-warning: #f77e00 !default;
+$color-danger: #f34141 !default;
+
+$body-bg-color: #fafafa;
+$body-font-color: $color-dark;
+
+$link-color: $color-primary-lighten;
+$link-decoration: none;
+$link-color-hover: $color-primary;
+$link-decoration-hover: none;
+
+// Social
+$social-facebook: #3b5998 !default;
+$social-twitter: #1da1f2 !default;
+$social-instagram: #e4405f !default;
+$social-twitch: #6441a4 !default;
+$social-youtube: #ff0000 !default;
+$social-linkedin: #0077b5 !default;
+
+//- Typography
+//- ----------------------------------------------
+
+$font-size-h1: 3em; // 48px
+$font-size-h2: 2em; // 32px
+$font-size-h3: 1.5em; // 24px
+$font-size-h4: 1.375em; // 22px
+$font-size-h5: 1em; // 16px
+$font-size-h6: 0.865em; // 14px
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$headings-font-family: $font-family-accent;
+$headings-color: $color-dark;
+$headings-color-inverse: $color-light;
+$headings-line-height: 1.2 !default;
+
+$font-style-h1: normal;
+$font-style-h2: normal;
+$font-style-h3: normal;
+$font-style-h4: normal;
+$font-style-h5: normal;
+$font-style-h6: normal;
+
+$text-transform-h1: uppercase;
+$text-transform-h2: uppercase;
+$text-transform-h3: uppercase;
+$text-transform-h4: none;
+$text-transform-h5: uppercase;
+$text-transform-h6: uppercase;
+
+$display1-size: 4.875em !default;
+$display2-size: 3em !default;
+$display3-size: 2em !default;
+$display4-size: 1em !default;
+
+$display1-weight: 700 !default;
+$display-line-height: $headings-line-height !default;
+
+$line-height-base: 1.733333; // 26/15
