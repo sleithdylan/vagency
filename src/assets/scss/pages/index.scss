@@ -482,7 +482,6 @@ nav {
   .projects,
   .testimonials,
   footer {
-    // padding: 4em 0;
     width: 95%;
     margin: 0 auto;
   }
@@ -807,7 +806,7 @@ nav {
 
   // Hero
   .hero {
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -836,6 +835,14 @@ nav {
       width: 95%;
       margin: 4em auto 0;
     }
+  }
+
+  .hero,
+  .services,
+  .projects,
+  .testimonials,
+  footer {
+    margin-bottom: 5em;
   }
 
   //TODO Remove .left and fix styling
@@ -1132,6 +1139,14 @@ nav {
   footer {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .hero,
+  .services,
+  .projects,
+  .testimonials,
+  footer {
+    margin-bottom: 5em;
   }
 
   //TODO Remove .left and fix styling
