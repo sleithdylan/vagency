@@ -11,7 +11,7 @@ header {
 
   & a {
     & .logo {
-      padding-left: 0.3em;
+      padding-left: 0.5em;
       height: 30px;
     }
   }
@@ -47,7 +47,7 @@ nav {
       &__exit a {
         position: absolute;
         top: -5px;
-        right: -5px;
+        right: 5px;
         color: #2b2a35;
       }
 
@@ -72,7 +72,7 @@ nav {
 // Sponsors
 .hero__sponsors {
   display: flex;
-  width: 95%;
+  width: 100%;
   margin: 2em auto;
 
   & .hero__sponsor-img {
@@ -160,6 +160,7 @@ nav {
   & .services__content-description {
     width: 70%;
     margin: 0 auto;
+    padding-bottom: 2em;
   }
 
   &__subtitle span {
@@ -168,8 +169,8 @@ nav {
 
   // Soft Shadow
   &__card {
-    width: 90%;
-    margin: 2.8em auto;
+    width: 100%;
+    margin: 2em auto;
     padding: 2em;
     background: white;
     border-radius: 0.4em;
@@ -177,7 +178,7 @@ nav {
     box-shadow: horizontal vertical color;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     border-top: #7552f6 6px solid;
-    transition: all 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 
     & h3 {
       font-size: 1.3em;
@@ -193,8 +194,7 @@ nav {
 
   &__card:hover {
     border-top: #9897ee 6px solid;
-    // box-shadow: 10px 10px 30px rgba(117, 82, 246, 0.1);
-    transition: all 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 
   &__service-img {
@@ -222,9 +222,8 @@ nav {
     margin-top: 3.5em;
 
     & .cell {
-      // flex: 0 0 32%; /* don't grow, don't shrink, width */
-      height: 100%;
-      margin: 1em 1em;
+      flex: 0 0 32%;
+      margin: 1em auto;
       background-color: #ffffff;
       box-shadow: horizontal vertical color;
       box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
@@ -252,14 +251,18 @@ nav {
     padding-bottom: 0.5em;
   }
 
+  & h2 {
+    padding-bottom: 1em;
+  }
+
   &__subtitle span {
     color: #7552f6;
   }
 
   // Soft Shadow
   &__card {
-    width: 90%;
-    margin: 2.8em auto;
+    width: 100%;
+    margin: 3.5em auto;
     background: white;
     border-radius: 0.4em;
     text-align: center;
@@ -329,7 +332,7 @@ nav {
 
       & li a {
         font-size: 0.9em;
-        padding: 0 1.5em;
+        padding: 0 0 0 2.5em;
         font-weight: normal;
       }
 
@@ -366,11 +369,19 @@ nav {
     }
   }
 
+  header,
+  .hero,
+  .services,
+  .projects,
+  .testimonials {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   // Services
   .services {
     & .services__content-main {
       font-size: 1.1em;
-      // width: 55%;
       width: 75%;
       margin: 0 auto;
     }
@@ -378,12 +389,13 @@ nav {
     & .services__content-description {
       width: 70%;
       margin: 0 auto;
+      padding-bottom: 2em;
     }
 
     // Soft Shadow
     &__card {
-      width: 90%;
-      margin: 2.8em auto;
+      width: 100%;
+      margin: 2em auto;
       padding: 2em;
       background: white;
       border-radius: 0.4em;
@@ -406,7 +418,6 @@ nav {
   .projects {
     & .projects__content-main {
       font-size: 1.1em;
-      // width: 55%;
       width: 75%;
       margin: 0 auto;
     }
@@ -423,9 +434,9 @@ nav {
       margin-top: 3.5em;
 
       & .cell {
-        // flex: 0 0 32%; /* don't grow, don't shrink, width */
+        flex: 0 0 32%;
         height: 100%;
-        margin: 1em 1em;
+        margin: 1em auto;
         background-color: #ffffff;
         box-shadow: horizontal vertical color;
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
@@ -443,16 +454,18 @@ nav {
   // Testimonials
   .testimonials {
     & .testimonials__content-main {
-      // font-size: 1.1em;
       width: 75%;
       margin: 0 auto;
     }
 
+    & h2 {
+      padding-bottom: 2em;
+    }
+
     // Soft Shadow
     &__card {
-      width: 90%;
-      margin: 2.8em auto;
-      // padding: 2em;
+      width: 100%;
+      margin: 3.5em auto;
       background: white;
       border-radius: 0.4em;
       text-align: center;
@@ -480,7 +493,6 @@ nav {
       }
 
       & h4 {
-        // font-size: 1.1em;
         font-weight: 700;
         padding: 0 0 1em;
       }
@@ -516,7 +528,7 @@ nav {
 
       & li a {
         font-size: 0.9em;
-        padding: 0 1.5em;
+        padding: 0 0 0 2.5em;
         font-weight: normal;
       }
 
@@ -548,8 +560,8 @@ nav {
           content: '';
           position: absolute;
           bottom: 0;
-          left: 21px;
-          right: 21px;
+          left: 36px;
+          right: 0px;
           height: 2px;
           background-color: #7552f6;
           transform-origin: bottom right;
@@ -567,7 +579,15 @@ nav {
   //Hero
   .hero__content {
     width: 65%;
-    // font-size: 1.1em;
+  }
+
+  header,
+  .hero,
+  .services,
+  .projects,
+  .testimonials {
+    width: 95%;
+    margin: 0 auto;
   }
 
   // Services
@@ -584,8 +604,8 @@ nav {
 
     // Soft Shadow
     &__card {
-      width: 90%;
-      margin: 2.8em auto;
+      width: 100%;
+      margin: 2em auto;
       padding: 2em;
       background: white;
       border-radius: 0.4em;
@@ -598,7 +618,7 @@ nav {
       }
 
       & p {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
       }
     }
@@ -620,16 +640,14 @@ nav {
   // Testimonials
   .testimonials {
     & .testimonials__content-main {
-      // font-size: 1.1em;
       width: 75%;
       margin: 0 auto;
     }
 
     // Soft Shadow
     &__card {
-      width: 90%;
-      margin: 2.8em auto;
-      // padding: 2em;
+      width: 100%;
+      margin: 3.5em auto;
       background: white;
       border-radius: 0.4em;
       text-align: center;
@@ -657,14 +675,13 @@ nav {
       }
 
       & h4 {
-        // font-size: 1.1em;
         font-weight: 700;
         padding: 0 0 1em;
       }
 
       & p {
         color: #969a9e;
-        padding: 0 1.8em 3em;
+        padding: 0 5em 3em;
       }
     }
   }
@@ -674,11 +691,6 @@ nav {
 //- ----------------------------------------------
 
 @media (min-width: 992px) {
-  .container {
-    padding: 1.3em;
-    text-align: center;
-  }
-
   .flex {
     display: flex;
   }
@@ -698,7 +710,6 @@ nav {
       width: 100%;
       text-align: left;
       align-self: center;
-      // font-size: 1.1em;
     }
 
     &__description {
@@ -729,16 +740,13 @@ nav {
   // Services
   .services {
     & .services__content-main {
-      // font-size: 1.2em;
-      // width: 35%;
-      // padding-bottom: 3em;
       text-align: left;
       padding-right: 1em;
     }
 
     & .services__content-description {
-      width: 100%;
-      padding-left: 1em;
+      width: 65%;
+      padding: 0.9em 0 0.9em 0;
       text-align: left;
       align-self: center;
     }
@@ -754,14 +762,15 @@ nav {
 
     // Soft Shadow
     &__card {
-      width: 30%;
-      margin: 2.8em auto;
-      padding: 2em;
       background: white;
       border-radius: 0.4em;
       text-align: center;
       box-shadow: horizontal vertical color;
       box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    &__card:nth-of-type(2) {
+      margin: 2em 2em;
     }
 
     &__service-img {
@@ -773,16 +782,14 @@ nav {
   // Projects
   .projects {
     & .projects__content-main {
-      // font-size: 1.2em;
       width: 80%;
-      // padding-bottom: 3em;
+
       text-align: left;
-      // padding-right: 1em;
     }
 
     &__cta {
       align-self: center;
-      width: 19%;
+      width: 25%;
     }
 
     &__subtitle span {
@@ -797,11 +804,10 @@ nav {
       margin-top: 2em;
       height: 100%;
 
-      // width: 90%;
       & .cell {
-        flex: 1 0 45%;
+        flex: 1 1 45%;
         height: 100%;
-        margin: 1em 1em;
+        margin: 1em;
         background-color: #ffffff;
         box-shadow: horizontal vertical color;
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
@@ -819,7 +825,6 @@ nav {
   // Testimonials
   .testimonials {
     & .testimonials__content-main {
-      // font-size: 1.1em;
       width: 75%;
       margin: 0 auto;
     }
@@ -834,14 +839,18 @@ nav {
 
     // Soft Shadow
     &__card {
-      width: 90%;
-      margin: 2.8em 1em;
+      width: 30%;
+
       padding: 2em;
       background: white;
       border-radius: 0.4em;
       text-align: center;
       box-shadow: horizontal vertical color;
       box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+
+      &__card:nth-of-type(2) {
+        margin: 2em 2em;
+      }
 
       & span img {
         position: relative;
@@ -864,14 +873,13 @@ nav {
       }
 
       & h4 {
-        // font-size: 1.1em;
         font-weight: 700;
         padding: 0 0 1em;
       }
 
       & p {
         color: #969a9e;
-        padding: 0 1.8em 3em;
+        padding: 0 0 3em;
       }
     }
   }
@@ -881,11 +889,6 @@ nav {
 //- ----------------------------------------------
 
 @media (min-width: 1200px) {
-  .container {
-    padding: 1.3em;
-    text-align: center;
-  }
-
   .flex {
     display: flex;
   }
@@ -893,10 +896,9 @@ nav {
   // Hero
   .hero {
     &__content {
-      width: 90%;
+      width: 100%;
       text-align: left;
       align-self: center;
-      // font-size: 1.1em;
     }
 
     &__description {
@@ -920,7 +922,7 @@ nav {
   .services,
   .projects,
   .testimonials {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -936,16 +938,13 @@ nav {
   // Services
   .services {
     & .services__content-main {
-      // font-size: 1.2em;
-      // width: 35%;
-      // padding-bottom: 3em;
       padding-right: 1em;
       text-align: left;
     }
 
     & .services__content-description {
-      width: 100%;
-      padding-left: 1em;
+      width: 65%;
+      padding: 0.9em 0 0.9em 0;
       text-align: left;
       align-self: center;
     }
@@ -961,15 +960,16 @@ nav {
 
     // Soft Shadow
     &__card {
-      width: 30%;
-      margin: 2.8em auto;
-      padding: 2em;
       background: white;
       border-radius: 0.4em;
       text-align: center;
       box-shadow: horizontal vertical color;
       box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
       transition: 0.2s ease-in-out;
+    }
+
+    &__card:nth-of-type(2) {
+      margin: 2em 2em;
     }
 
     &__service-img {
@@ -981,16 +981,14 @@ nav {
   // Projects
   .projects {
     & .projects__content-main {
-      // font-size: 1.2em;
       width: 100%;
-      // padding-bottom: 3em;
+
       text-align: left;
-      // padding-right: 1em;
     }
 
     &__cta {
       align-self: center;
-      width: 22%;
+      width: 25%;
     }
 
     &__subtitle span {
@@ -1005,11 +1003,10 @@ nav {
       margin-top: 2em;
       height: 100%;
 
-      // width: 90%;
       & .cell {
         flex: 1 0 29%;
         height: 100%;
-        margin: 1em 1em;
+        margin: 1em;
         background-color: #ffffff;
         box-shadow: horizontal vertical color;
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
@@ -1034,7 +1031,6 @@ nav {
   // Testimonials
   .testimonials {
     & .testimonials__content-main {
-      // font-size: 1.1em;
       width: 75%;
       margin: 0 auto;
     }
@@ -1044,12 +1040,6 @@ nav {
     }
   }
 
-  .testimonials__content-main {
-    // font-size: 1.1em;
-    width: 75%;
-    margin: 0 auto;
-  }
-
   .hero__content-visual {
     align-self: center;
     width: 100%;
@@ -1057,5 +1047,17 @@ nav {
 
   .hero__title {
     font-size: 2.7em;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

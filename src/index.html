@@ -1,221 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vagency &mdash; A design agency shaping ideas into products.</title>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Vagency &mdash; A design agency shaping ideas into products.</title>
-  <link rel="stylesheet" href="./assets/css/app.css" />
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-</head>
-
-<body>
-  <!-- Header -->
-  <div class="container">
+  <body>
     <!-- Header -->
-    <header>
-      <!-- Brand -->
-      <a href="#">
-        <img src="./assets/images/png/vagency.png" class="logo" alt="vagency logo" />
-      </a>
-      <!-- Navbar -->
-      <nav>
-        <i class="bx bx-menu-alt-right bx-md menu" id="menu-btn" alt="open menu"></i>
-        <ul class="nav" id="nav">
-          <li class="nav__item nav__exit" id="nav__btn--exit">
-            <a href="#">
-              <i class="bx bx-x bx-md"></i>
-            </a>
-          </li>
-          <li class="nav__item nav__item--active">
-            <a href="#">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#">Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-  <!-- Hero -->
-  <div class="container hero">
-    <div class="flex">
-      <div class="col hero__content">
-        <h1 class="hero__title stagger">
-          <span>Think the Design,</span>
-          <span>Design the Thinking</span>
-        </h1>
-        <p class="hero__description stagger">
-          A design agency shaping ideas into products. We help startup and enterprises invent,
-          build and launch their next product.
-        </p>
-        <a href="#" class="btn btn--primary stagger">Estimate Project</a>
-      </div>
-      <div class="col hero__content-visual">
-        <img src="./assets/images/svg/startup_.svg" alt="image of rocket" />
-      </div>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <!-- Brand -->
+        <a href="#">
+          <img src="./assets/images/png/vagency.png" class="logo" alt="vagency logo" />
+        </a>
+        <!-- Navbar -->
+        <nav>
+          <i class="bx bx-menu-alt-right bx-md menu" id="menu-btn" alt="open menu"></i>
+          <ul class="nav" id="nav">
+            <li class="nav__item nav__exit" id="nav__btn--exit">
+              <a href="#">
+                <i class="bx bx-x bx-md"></i>
+              </a>
+            </li>
+            <li class="nav__item nav__item--active">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
-    <!-- Sponsors -->
-    <div class="flex">
-      <div class="col hero__sponsors">
-        <svg class="hero__sponsor-img" id="svg-behance" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-          viewBox="0 0 24 24">
-          <path
-            d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.28.871.28 1.443 0 .62-.14 1.138-.421 1.551-.283.414-.7.753-1.256 1.015.757.219 1.318.602 1.69 1.146.374.549.557 1.206.557 1.976 0 .625-.119 1.162-.358 1.613-.24.458-.569.829-.974 1.114-.408.289-.876.501-1.399.64-.519.137-1.057.206-1.609.206H2V5.731H7.803zM7.452 10.703c.48 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.151-.707C8.853 8.349 8.714 8.205 8.539 8.104 8.365 7.999 8.17 7.928 7.942 7.889 7.719 7.845 7.485 7.828 7.245 7.828H4.71v2.875H7.452zM7.603 15.942c.267 0 .521-.023.76-.077C8.604 15.813 8.818 15.729 9 15.604c.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798 0-.634-.179-1.085-.533-1.358-.355-.27-.831-.404-1.414-.404H4.71v3.39H7.603zM16.168 15.901c.367.358.896.538 1.584.538.493 0 .919-.125 1.278-.373.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693-.702 0-1.334-.113-1.9-.337-.567-.227-1.042-.544-1.439-.958-.389-.416-.69-.907-.905-1.485-.213-.574-.32-1.21-.32-1.899 0-.666.111-1.289.329-1.864.223-.577.529-1.075.934-1.493.405-.42.885-.751 1.444-.994.559-.241 1.175-.362 1.858-.362.754 0 1.413.146 1.979.44.563.292 1.026.687 1.39 1.182.363.493.622 1.058.783 1.691.161.632.217 1.292.171 1.983h-6.431C15.563 14.876 15.8 15.543 16.168 15.901zM18.98 11.22c-.291-.322-.783-.496-1.385-.496-.391 0-.714.065-.974.199-.254.133-.461.297-.62.491-.157.197-.265.405-.328.628-.062.217-.1.413-.111.587h3.982C19.486 12.005 19.272 11.544 18.98 11.22zM15.062 6.557H20.051V7.772H15.062z" />
-        </svg>
-        <svg class="hero__sponsor-img" id="svg-dribbble" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-          viewBox="0 0 24 24">
-          <path
-            d="M20.66,6.98c-0.894-1.533-2.107-2.747-3.641-3.64C15.486,2.447,13.813,2,12,2S8.514,2.447,6.98,3.34	C5.447,4.233,4.233,5.447,3.34,6.98S2,10.187,2,12s0.446,3.487,1.34,5.02c0.894,1.534,2.107,2.747,3.641,3.64	C8.514,21.553,10.187,22,12,22s3.486-0.447,5.02-1.34c1.533-0.893,2.747-2.106,3.641-3.64C21.554,15.487,22,13.813,22,12	S21.554,8.513,20.66,6.98z M12,3.66c2,0,3.772,0.64,5.32,1.919c-0.92,1.174-2.286,2.14-4.1,2.9c-1.002-1.813-2.088-3.327-3.261-4.54	C10.641,3.753,11.319,3.66,12,3.66z M5.51,6.8c0.754-0.947,1.656-1.686,2.711-2.22c1.212,1.201,2.325,2.7,3.34,4.5	c-2,0.6-4.114,0.9-6.341,0.9c-0.573,0-1.006-0.013-1.3-0.04C4.227,8.793,4.757,7.747,5.51,6.8z M3.66,12	c0-0.054,0.003-0.12,0.01-0.2c0.007-0.08,0.01-0.146,0.01-0.2c0.254,0.014,0.641,0.02,1.161,0.02c2.666,0,5.146-0.367,7.439-1.1	c0.187,0.373,0.381,0.793,0.58,1.26c-1.32,0.293-2.674,1.006-4.061,2.14S6.4,16.247,5.76,17.5C4.36,15.913,3.66,14.08,3.66,12z M12,20.34c-1.894,0-3.594-0.587-5.101-1.759C7.5,17.394,8.423,16.259,9.67,15.18c1.246-1.08,2.483-1.753,3.71-2.02	c0.772,2.133,1.293,4.339,1.56,6.62C13.966,20.153,12.986,20.34,12,20.34z M19.08,16.38c-0.666,1.066-1.526,1.94-2.58,2.621	c-0.24-2.08-0.7-4.107-1.379-6.081c0.932-0.066,1.765-0.1,2.5-0.1c0.799,0,1.686,0.034,2.659,0.1	C20.146,14.16,19.746,15.313,19.08,16.38z M17.84,11.38c-1.16,0-2.233,0.047-3.22,0.14c-0.254-0.653-0.48-1.193-0.68-1.62	c2.066-0.906,3.532-2.006,4.399-3.3c1.2,1.414,1.854,3.027,1.96,4.84C19.487,11.4,18.667,11.38,17.84,11.38z" />
-        </svg>
-        <svg class="hero__sponsor-img" id="svg-shopify" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-          viewBox="0 0 24 24">
-          <path
-            d="M14.49 20.937l5.381-1.166c0 0-1.941-13.138-1.957-13.225-.016-.086-.086-.144-.158-.144s-1.439-.101-1.439-.101-.949-.949-1.064-1.05c-.027-.029-.057-.043-.086-.058L14.49 20.937zM14.936 5.165c-.016 0-.043.014-.057.014-.016 0-.217.059-.533.158-.318-.919-.879-1.768-1.871-1.768-.029 0-.057 0-.086 0-.289-.361-.633-.519-.936-.519-2.316 0-3.426 2.892-3.77 4.359C6.791 7.684 6.145 7.885 6.07 7.914 5.566 8.072 5.553 8.086 5.496 8.562 5.439 8.906 4.129 19.051 4.129 19.051l10.117 1.899L14.936 5.165zM12.301 5.869c0 .03 0 .073 0 .102-.559.173-1.178.36-1.783.547.346-1.323.992-1.972 1.553-2.217C12.217 4.676 12.301 5.179 12.301 5.869zM11.381 3.669c.1 0 .201.028.303.102-.732.344-1.539 1.222-1.871 2.978C9.324 6.906 8.848 7.05 8.402 7.181 8.791 5.842 9.727 3.669 11.381 3.669zM11.783 11.481c0 0-.604-.315-1.322-.315-1.08 0-1.123.676-1.123.849 0 .921 2.418 1.28 2.418 3.453 0 1.712-1.08 2.806-2.547 2.806-1.756 0-2.648-1.094-2.648-1.094l.475-1.554c0 0 .922.792 1.697.792.506 0 .721-.402.721-.69 0-1.209-1.986-1.268-1.986-3.252 0-1.669 1.195-3.295 3.627-3.295.936 0 1.395.272 1.395.272L11.783 11.481zM12.705 4.2c.518.06.85.648 1.064 1.311-.258.087-.547.173-.863.273 0-.058 0-.116 0-.187C12.906 5.036 12.834 4.575 12.705 4.2z" />
-        </svg>
-        <svg class="hero__sponsor-img" id="svg-squarespace" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-          viewBox="0 0 24 24">
-          <path
-            d="M20.886,9.264c-1.502-1.5-3.941-1.5-5.475,0l-6.13,6.131c-0.376,0.375-0.376,1,0,1.377c0.375,0.375,1,0.375,1.376,0	l6.13-6.131c0.749-0.75,1.97-0.75,2.722,0s0.752,1.973,0,2.723l-6.037,6.035c0.751,0.75,1.971,0.75,2.723,0l4.66-4.66	C22.386,13.205,22.386,10.766,20.886,9.264z M18.822,11.297c-0.377-0.375-1.001-0.375-1.376,0l-6.134,6.162	c-0.751,0.75-1.97,0.75-2.72,0c-0.376-0.375-1.002-0.375-1.377,0s-0.375,1.002,0,1.375c1.502,1.502,3.942,1.502,5.475,0l6.131-6.129	C19.196,12.299,19.196,11.672,18.822,11.297z M16.787,5.168c-1.501-1.502-3.941-1.502-5.475,0l-6.131,6.129	c-0.375,0.377-0.375,1,0,1.375c0.376,0.377,1.001,0.377,1.377,0l6.168-6.129c0.751-0.75,1.977-0.75,2.727,0	c0.377,0.375,1.002,0.375,1.376,0c0.352-0.406,0.352-1-0.024-1.375H16.787z M14.724,7.199c-0.376-0.377-1.001-0.377-1.376,0	l-6.131,6.164c-0.749,0.748-1.971,0.748-2.723,0c-0.751-0.75-0.751-1.971,0-2.723l6.037-6.039c-0.751-0.75-1.971-0.75-2.722,0	L3.118,9.264c-1.501,1.502-1.501,3.941,0,5.475c1.501,1.502,3.94,1.502,5.475,0l6.129-6.131c0.377-0.408,0.377-1.033,0-1.408H14.724	z" />
-        </svg>
-        <svg class="hero__sponsor-img" id="svg-adobe" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-          viewBox="0 0 24 24">
-          <path
-            d="M21 19.966L21 4.034 14.346 4.034zM3 4.034L3 19.966 9.658 4.034zM9.092 16.76L12.196 16.76 13.464 19.965 16.242 19.965 12.003 9.904z" />
-        </svg>
-        <svg class="hero__sponsor-img" id="svg-paypal" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-          viewBox="0 0 24 24">
-          <path
-            d="M19.554,9.488c0.121,0.563,0.106,1.246-0.04,2.051c-0.582,2.978-2.477,4.466-5.683,4.466h-0.442 c-0.168,0-0.314,0.056-0.444,0.166c-0.126,0.11-0.208,0.253-0.239,0.427l-0.041,0.189l-0.553,3.479l-0.021,0.151 c-0.033,0.175-0.115,0.316-0.247,0.426c-0.13,0.111-0.278,0.166-0.447,0.166H8.874c-0.142,0-0.252-0.049-0.331-0.15 c-0.08-0.102-0.11-0.221-0.09-0.363c0.061-0.373,0.148-0.938,0.267-1.689c0.117-0.75,0.206-1.314,0.267-1.689 s0.15-0.938,0.272-1.685c0.121-0.748,0.212-1.31,0.271-1.685c0.033-0.248,0.179-0.371,0.433-0.371h1.316 c0.893,0.013,1.682-0.057,2.375-0.211c1.172-0.262,2.134-0.744,2.886-1.449c0.685-0.637,1.203-1.462,1.56-2.473 c0.162-0.47,0.277-0.917,0.352-1.338c0.006-0.041,0.014-0.066,0.025-0.074c0.008-0.011,0.022-0.014,0.035-0.011 c0.012,0.004,0.032,0.016,0.062,0.035C19.098,8.254,19.428,8.797,19.554,9.488L19.554,9.488z M17.826,6.652 c0,0.717-0.154,1.508-0.465,2.374c-0.537,1.562-1.547,2.618-3.037,3.168c-0.758,0.269-1.602,0.408-2.535,0.425 c0,0.006-0.301,0.007-0.904,0.007l-0.903-0.007c-0.672,0-1.067,0.32-1.187,0.964c-0.013,0.053-0.298,1.83-0.855,5.329 c-0.008,0.066-0.048,0.102-0.121,0.102H4.854c-0.148,0-0.271-0.055-0.369-0.165c-0.098-0.112-0.135-0.241-0.115-0.39L6.702,3.664 C6.734,3.469,6.827,3.31,6.978,3.181c0.151-0.127,0.325-0.19,0.519-0.19h6.014c0.228,0,0.555,0.044,0.979,0.131 c0.428,0.084,0.801,0.194,1.123,0.321c0.718,0.274,1.266,0.688,1.645,1.237C17.637,5.232,17.826,5.887,17.826,6.652L17.826,6.652z" />
-        </svg>
+    <!-- Hero -->
+    <div class="container hero">
+      <div class="flex">
+        <div class="col hero__content">
+          <h1 class="hero__title stagger">
+            <span>Think the Design,</span>
+            <span>Design the Thinking</span>
+          </h1>
+          <p class="hero__description stagger">
+            A design agency shaping ideas into products. We help startup and enterprises invent,
+            build and launch their next product.
+          </p>
+          <a href="#" class="btn btn--primary stagger">Estimate Project</a>
+        </div>
+        <div class="col hero__content-visual">
+          <img src="./assets/images/svg/startup_.svg" alt="image of rocket" />
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- Services -->
-  <div class="container services">
-    <div class="flex" data-aos="fade-up">
-      <div class="left services__content-main">
-        <p>Our Capabilities</p>
-        <h2 class="services__subtitle">
-          Having attractive services has never been <span>easier.</span>
-        </h2>
-      </div>
-      <p class="services__content-description">
-        We're brand strategy and digital design agency, building brands that matter in culuture
-        with more than ten years of knowledge.
-      </p>
-    </div>
-    <div class="services__cards">
-      <div class="services__card" data-aos="flip-down">
-        <img src="./assets/images/svg/ui_design_.svg" class="services__service-img" alt="girl designing on laptop" />
-        <h3 class="grey">UI/UX Design</h3>
-        <p>Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App</p>
-      </div>
-      <div class="services__card" data-aos="flip-down" data-aos-delay="250">
-        <img src="./assets/images/svg/web_development_.svg" class="services__service-img"
-          alt="people building website" />
-        <h3 class="grey">Development</h3>
-        <p>HTML/CSS, JavaScript Animation, WordPress, WordPress Plugin</p>
-      </div>
-      <div class="services__card" data-aos="flip-down" data-aos-delay="250">
-        <img src="./assets/images/svg/designer_.svg" class="services__service-img" alt="man drawing" />
-        <h3 class="grey">Branding</h3>
-        <p>
-          Visual Identity, Stationary Kit, Marketing Materials, Illustration Set, Character Design
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Projects -->
-  <div class="container projects">
-    <div class="flex" data-aos="fade-up">
-      <div class="left projects__content-main">
-        <p>Our Activites</p>
-        <h2 class="projects__subtitle">
-          In the meantime take a look at our current <span>projects.</span>
-        </h2>
-      </div>
-      <a href="" class="projects__cta btn btn--primary">View Projects</a>
-    </div>
-    <div class="flex">
-      <div class="projects__work">
-        <div class="cell" data-aos="fade-up">
-          <img src="./assets/images/jpg/project-one.jpg" class="projects-img" alt="" />
-        </div>
-        <div class="cell" data-aos="fade-up">
-          <img src="./assets/images/jpg/project-two.jpg" class="projects-img" alt="" />
-        </div>
-        <div class="cell" data-aos="fade-up">
-          <img src="./assets/images/jpg/project-three.jpg" class="projects-img" alt="" />
-        </div>
-        <div class="cell" data-aos="fade-up">
-          <img src="./assets/images/jpg/project-two.jpg" class="projects-img" alt="" />
-        </div>
-        <div class="cell" data-aos="fade-up">
-          <img src="./assets/images/jpg/project-three.jpg" class="projects-img" alt="" />
-        </div>
-        <div class="cell" data-aos="fade-up">
-          <img src="./assets/images/jpg/project-one.jpg" class="projects-img" alt="" />
-        </div>
-        <div class="cell" data-aos="fade-up">
-          <img src="./assets/images/jpg/project-three.jpg" class="projects-img" alt="" />
-        </div>
-        <div class="cell" data-aos="fade-up">
-          <img src="./assets/images/jpg/project-one.jpg" class="projects-img" alt="" />
-        </div>
-        <div class="cell" data-aos="fade-up">
-          <img src="./assets/images/jpg/project-two.jpg" class="projects-img" alt="" />
+      <!-- Sponsors -->
+      <div class="flex">
+        <div class="col hero__sponsors">
+          <svg
+            class="hero__sponsor-img"
+            id="svg-behance"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.28.871.28 1.443 0 .62-.14 1.138-.421 1.551-.283.414-.7.753-1.256 1.015.757.219 1.318.602 1.69 1.146.374.549.557 1.206.557 1.976 0 .625-.119 1.162-.358 1.613-.24.458-.569.829-.974 1.114-.408.289-.876.501-1.399.64-.519.137-1.057.206-1.609.206H2V5.731H7.803zM7.452 10.703c.48 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.151-.707C8.853 8.349 8.714 8.205 8.539 8.104 8.365 7.999 8.17 7.928 7.942 7.889 7.719 7.845 7.485 7.828 7.245 7.828H4.71v2.875H7.452zM7.603 15.942c.267 0 .521-.023.76-.077C8.604 15.813 8.818 15.729 9 15.604c.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798 0-.634-.179-1.085-.533-1.358-.355-.27-.831-.404-1.414-.404H4.71v3.39H7.603zM16.168 15.901c.367.358.896.538 1.584.538.493 0 .919-.125 1.278-.373.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693-.702 0-1.334-.113-1.9-.337-.567-.227-1.042-.544-1.439-.958-.389-.416-.69-.907-.905-1.485-.213-.574-.32-1.21-.32-1.899 0-.666.111-1.289.329-1.864.223-.577.529-1.075.934-1.493.405-.42.885-.751 1.444-.994.559-.241 1.175-.362 1.858-.362.754 0 1.413.146 1.979.44.563.292 1.026.687 1.39 1.182.363.493.622 1.058.783 1.691.161.632.217 1.292.171 1.983h-6.431C15.563 14.876 15.8 15.543 16.168 15.901zM18.98 11.22c-.291-.322-.783-.496-1.385-.496-.391 0-.714.065-.974.199-.254.133-.461.297-.62.491-.157.197-.265.405-.328.628-.062.217-.1.413-.111.587h3.982C19.486 12.005 19.272 11.544 18.98 11.22zM15.062 6.557H20.051V7.772H15.062z"
+            />
+          </svg>
+          <svg
+            class="hero__sponsor-img"
+            id="svg-dribbble"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20.66,6.98c-0.894-1.533-2.107-2.747-3.641-3.64C15.486,2.447,13.813,2,12,2S8.514,2.447,6.98,3.34	C5.447,4.233,4.233,5.447,3.34,6.98S2,10.187,2,12s0.446,3.487,1.34,5.02c0.894,1.534,2.107,2.747,3.641,3.64	C8.514,21.553,10.187,22,12,22s3.486-0.447,5.02-1.34c1.533-0.893,2.747-2.106,3.641-3.64C21.554,15.487,22,13.813,22,12	S21.554,8.513,20.66,6.98z M12,3.66c2,0,3.772,0.64,5.32,1.919c-0.92,1.174-2.286,2.14-4.1,2.9c-1.002-1.813-2.088-3.327-3.261-4.54	C10.641,3.753,11.319,3.66,12,3.66z M5.51,6.8c0.754-0.947,1.656-1.686,2.711-2.22c1.212,1.201,2.325,2.7,3.34,4.5	c-2,0.6-4.114,0.9-6.341,0.9c-0.573,0-1.006-0.013-1.3-0.04C4.227,8.793,4.757,7.747,5.51,6.8z M3.66,12	c0-0.054,0.003-0.12,0.01-0.2c0.007-0.08,0.01-0.146,0.01-0.2c0.254,0.014,0.641,0.02,1.161,0.02c2.666,0,5.146-0.367,7.439-1.1	c0.187,0.373,0.381,0.793,0.58,1.26c-1.32,0.293-2.674,1.006-4.061,2.14S6.4,16.247,5.76,17.5C4.36,15.913,3.66,14.08,3.66,12z M12,20.34c-1.894,0-3.594-0.587-5.101-1.759C7.5,17.394,8.423,16.259,9.67,15.18c1.246-1.08,2.483-1.753,3.71-2.02	c0.772,2.133,1.293,4.339,1.56,6.62C13.966,20.153,12.986,20.34,12,20.34z M19.08,16.38c-0.666,1.066-1.526,1.94-2.58,2.621	c-0.24-2.08-0.7-4.107-1.379-6.081c0.932-0.066,1.765-0.1,2.5-0.1c0.799,0,1.686,0.034,2.659,0.1	C20.146,14.16,19.746,15.313,19.08,16.38z M17.84,11.38c-1.16,0-2.233,0.047-3.22,0.14c-0.254-0.653-0.48-1.193-0.68-1.62	c2.066-0.906,3.532-2.006,4.399-3.3c1.2,1.414,1.854,3.027,1.96,4.84C19.487,11.4,18.667,11.38,17.84,11.38z"
+            />
+          </svg>
+          <svg
+            class="hero__sponsor-img"
+            id="svg-shopify"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14.49 20.937l5.381-1.166c0 0-1.941-13.138-1.957-13.225-.016-.086-.086-.144-.158-.144s-1.439-.101-1.439-.101-.949-.949-1.064-1.05c-.027-.029-.057-.043-.086-.058L14.49 20.937zM14.936 5.165c-.016 0-.043.014-.057.014-.016 0-.217.059-.533.158-.318-.919-.879-1.768-1.871-1.768-.029 0-.057 0-.086 0-.289-.361-.633-.519-.936-.519-2.316 0-3.426 2.892-3.77 4.359C6.791 7.684 6.145 7.885 6.07 7.914 5.566 8.072 5.553 8.086 5.496 8.562 5.439 8.906 4.129 19.051 4.129 19.051l10.117 1.899L14.936 5.165zM12.301 5.869c0 .03 0 .073 0 .102-.559.173-1.178.36-1.783.547.346-1.323.992-1.972 1.553-2.217C12.217 4.676 12.301 5.179 12.301 5.869zM11.381 3.669c.1 0 .201.028.303.102-.732.344-1.539 1.222-1.871 2.978C9.324 6.906 8.848 7.05 8.402 7.181 8.791 5.842 9.727 3.669 11.381 3.669zM11.783 11.481c0 0-.604-.315-1.322-.315-1.08 0-1.123.676-1.123.849 0 .921 2.418 1.28 2.418 3.453 0 1.712-1.08 2.806-2.547 2.806-1.756 0-2.648-1.094-2.648-1.094l.475-1.554c0 0 .922.792 1.697.792.506 0 .721-.402.721-.69 0-1.209-1.986-1.268-1.986-3.252 0-1.669 1.195-3.295 3.627-3.295.936 0 1.395.272 1.395.272L11.783 11.481zM12.705 4.2c.518.06.85.648 1.064 1.311-.258.087-.547.173-.863.273 0-.058 0-.116 0-.187C12.906 5.036 12.834 4.575 12.705 4.2z"
+            />
+          </svg>
+          <svg
+            class="hero__sponsor-img"
+            id="svg-squarespace"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20.886,9.264c-1.502-1.5-3.941-1.5-5.475,0l-6.13,6.131c-0.376,0.375-0.376,1,0,1.377c0.375,0.375,1,0.375,1.376,0	l6.13-6.131c0.749-0.75,1.97-0.75,2.722,0s0.752,1.973,0,2.723l-6.037,6.035c0.751,0.75,1.971,0.75,2.723,0l4.66-4.66	C22.386,13.205,22.386,10.766,20.886,9.264z M18.822,11.297c-0.377-0.375-1.001-0.375-1.376,0l-6.134,6.162	c-0.751,0.75-1.97,0.75-2.72,0c-0.376-0.375-1.002-0.375-1.377,0s-0.375,1.002,0,1.375c1.502,1.502,3.942,1.502,5.475,0l6.131-6.129	C19.196,12.299,19.196,11.672,18.822,11.297z M16.787,5.168c-1.501-1.502-3.941-1.502-5.475,0l-6.131,6.129	c-0.375,0.377-0.375,1,0,1.375c0.376,0.377,1.001,0.377,1.377,0l6.168-6.129c0.751-0.75,1.977-0.75,2.727,0	c0.377,0.375,1.002,0.375,1.376,0c0.352-0.406,0.352-1-0.024-1.375H16.787z M14.724,7.199c-0.376-0.377-1.001-0.377-1.376,0	l-6.131,6.164c-0.749,0.748-1.971,0.748-2.723,0c-0.751-0.75-0.751-1.971,0-2.723l6.037-6.039c-0.751-0.75-1.971-0.75-2.722,0	L3.118,9.264c-1.501,1.502-1.501,3.941,0,5.475c1.501,1.502,3.94,1.502,5.475,0l6.129-6.131c0.377-0.408,0.377-1.033,0-1.408H14.724	z"
+            />
+          </svg>
+          <svg
+            class="hero__sponsor-img"
+            id="svg-adobe"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 19.966L21 4.034 14.346 4.034zM3 4.034L3 19.966 9.658 4.034zM9.092 16.76L12.196 16.76 13.464 19.965 16.242 19.965 12.003 9.904z"
+            />
+          </svg>
+          <svg
+            class="hero__sponsor-img"
+            id="svg-paypal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19.554,9.488c0.121,0.563,0.106,1.246-0.04,2.051c-0.582,2.978-2.477,4.466-5.683,4.466h-0.442 c-0.168,0-0.314,0.056-0.444,0.166c-0.126,0.11-0.208,0.253-0.239,0.427l-0.041,0.189l-0.553,3.479l-0.021,0.151 c-0.033,0.175-0.115,0.316-0.247,0.426c-0.13,0.111-0.278,0.166-0.447,0.166H8.874c-0.142,0-0.252-0.049-0.331-0.15 c-0.08-0.102-0.11-0.221-0.09-0.363c0.061-0.373,0.148-0.938,0.267-1.689c0.117-0.75,0.206-1.314,0.267-1.689 s0.15-0.938,0.272-1.685c0.121-0.748,0.212-1.31,0.271-1.685c0.033-0.248,0.179-0.371,0.433-0.371h1.316 c0.893,0.013,1.682-0.057,2.375-0.211c1.172-0.262,2.134-0.744,2.886-1.449c0.685-0.637,1.203-1.462,1.56-2.473 c0.162-0.47,0.277-0.917,0.352-1.338c0.006-0.041,0.014-0.066,0.025-0.074c0.008-0.011,0.022-0.014,0.035-0.011 c0.012,0.004,0.032,0.016,0.062,0.035C19.098,8.254,19.428,8.797,19.554,9.488L19.554,9.488z M17.826,6.652 c0,0.717-0.154,1.508-0.465,2.374c-0.537,1.562-1.547,2.618-3.037,3.168c-0.758,0.269-1.602,0.408-2.535,0.425 c0,0.006-0.301,0.007-0.904,0.007l-0.903-0.007c-0.672,0-1.067,0.32-1.187,0.964c-0.013,0.053-0.298,1.83-0.855,5.329 c-0.008,0.066-0.048,0.102-0.121,0.102H4.854c-0.148,0-0.271-0.055-0.369-0.165c-0.098-0.112-0.135-0.241-0.115-0.39L6.702,3.664 C6.734,3.469,6.827,3.31,6.978,3.181c0.151-0.127,0.325-0.19,0.519-0.19h6.014c0.228,0,0.555,0.044,0.979,0.131 c0.428,0.084,0.801,0.194,1.123,0.321c0.718,0.274,1.266,0.688,1.645,1.237C17.637,5.232,17.826,5.887,17.826,6.652L17.826,6.652z"
+            />
+          </svg>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Testimonials -->
-  <div class="container testimonials">
-    <div class="flex" data-aos="fade-up">
-      <div class="left testimonials__content-main">
-        <i class="bx bxs-quote-right bx-md testimonials__qoute"></i>
-        <p>Customer Feedback</p>
-        <h2 class="testimonials__subtitle">What our <span>customers</span> say</h2>
-      </div>
-    </div>
-    <div class="testimonials__cards" data-aos="fade-up">
-      <div class="testimonials__card">
-        <span><img src="./assets/images/jpg/uiface-two.jpg" alt="" /></span>
-        <h3 class="grey">John Doe</h3>
-        <h4 class="grey">Project Manager</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, totam doloremque illum
-          eius cum expedita.
+    <!-- Services -->
+    <div class="container services">
+      <div class="flex" data-aos="fade-up">
+        <div class="left services__content-main">
+          <p>Our Capabilities</p>
+          <h2 class="services__subtitle">
+            Having attractive services has never been <span>easier.</span>
+          </h2>
+        </div>
+        <p class="services__content-description">
+          We're brand strategy and digital design agency, building brands that matter in culuture
+          with more than ten years of knowledge.
         </p>
       </div>
-      <div class="testimonials__card">
-        <span><img src="./assets/images/jpg/uiface-one.jpg" alt="" /></span>
-        <h3 class="grey">John Doe</h3>
-        <h4 class="grey">Software Engineer</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, totam doloremque illum
-          eius cum expedita.
-        </p>
-      </div>
-      <div class="testimonials__card">
-        <span><img src="./assets/images/jpg/uiface-three.jpg" alt="" /></span>
-        <h3 class="grey">John Doe</h3>
-        <h4 class="grey">Project Manager</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, totam doloremque illum
-          eius cum expedita.
-        </p>
+      <div class="services__cards">
+        <div class="services__card" data-aos="fade-up">
+          <img
+            src="./assets/images/svg/ui_design_.svg"
+            class="services__service-img"
+            alt="girl designing on laptop"
+          />
+          <h3 class="grey">UI/UX Design</h3>
+          <p>Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App</p>
+        </div>
+        <div class="services__card" data-aos="fade-up" data-aos-delay="250">
+          <img
+            src="./assets/images/svg/web_development_.svg"
+            class="services__service-img"
+            alt="people building website"
+          />
+          <h3 class="grey">Development</h3>
+          <p>HTML/CSS, JavaScript Animation, WordPress, WordPress Plugin</p>
+        </div>
+        <div class="services__card" data-aos="fade-up" data-aos-delay="500">
+          <img
+            src="./assets/images/svg/designer_.svg"
+            class="services__service-img"
+            alt="man drawing"
+          />
+          <h3 class="grey">Branding</h3>
+          <p>
+            Visual Identity, Stationary Kit, Marketing Materials, Illustration Set, Character Design
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="./assets/js/all.js"></script>
-</body>
-
+    <!-- Projects -->
+    <div class="container projects">
+      <div class="flex" data-aos="fade-up">
+        <div class="left projects__content-main">
+          <p>Our Activites</p>
+          <h2 class="projects__subtitle">
+            In the meantime take a look at our current <span>projects.</span>
+          </h2>
+        </div>
+        <a href="" class="projects__cta btn btn--primary">View Projects</a>
+      </div>
+      <div class="flex">
+        <div class="projects__work">
+          <div class="cell" data-aos="fade-up">
+            <img src="./assets/images/jpg/project-one.jpg" class="projects-img" alt="" />
+          </div>
+          <div class="cell" data-aos="fade-up" data-aos-delay="250">
+            <img src="./assets/images/jpg/project-two.jpg" class="projects-img" alt="" />
+          </div>
+          <div class="cell" data-aos="fade-up" data-aos-delay="500">
+            <img src="./assets/images/jpg/project-three.jpg" class="projects-img" alt="" />
+          </div>
+          <div class="cell" data-aos="fade-up" data-aos-delay="750">
+            <img src="./assets/images/jpg/project-two.jpg" class="projects-img" alt="" />
+          </div>
+          <div class="cell" data-aos="fade-up" data-aos-delay="1000">
+            <img src="./assets/images/jpg/project-three.jpg" class="projects-img" alt="" />
+          </div>
+          <div class="cell" data-aos="fade-up" data-aos-delay="1250">
+            <img src="./assets/images/jpg/project-one.jpg" class="projects-img" alt="" />
+          </div>
+          <div class="cell" data-aos="fade-up" data-aos-delay="1500">
+            <img src="./assets/images/jpg/project-three.jpg" class="projects-img" alt="" />
+          </div>
+          <div class="cell" data-aos="fade-up" data-aos-delay="1750">
+            <img src="./assets/images/jpg/project-one.jpg" class="projects-img" alt="" />
+          </div>
+          <div class="cell" data-aos="fade-up" data-aos-delay="2000">
+            <img src="./assets/images/jpg/project-two.jpg" class="projects-img" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials -->
+    <div class="container testimonials">
+      <div class="flex" data-aos="fade-up">
+        <div class="left testimonials__content-main">
+          <i class="bx bxs-quote-right bx-md testimonials__qoute"></i>
+          <p>Customer Feedback</p>
+          <h2 class="testimonials__subtitle">What our <span>customers</span> say</h2>
+        </div>
+      </div>
+      <div class="testimonials__cards">
+        <div class="testimonials__card" data-aos="fade-up">
+          <span><img src="./assets/images/jpg/uiface-two.jpg" alt="" /></span>
+          <h3 class="grey">Allison Fox</h3>
+          <h4 class="grey">PayPal</h4>
+          <p>
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, totam doloremque
+            illum eius cum expedita."
+          </p>
+        </div>
+        <div class="testimonials__card" data-aos="fade-up" data-aos-delay="250">
+          <span><img src="./assets/images/jpg/uiface-one.jpg" alt="" /></span>
+          <h3 class="grey">Ross Clarke</h3>
+          <h4 class="grey">Dribbble</h4>
+          <p>
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, totam doloremque
+            illum eius cum expedita."
+          </p>
+        </div>
+        <div class="testimonials__card" data-aos="fade-up" data-aos-delay="500">
+          <span><img src="./assets/images/jpg/uiface-three.jpg" alt="" /></span>
+          <h3 class="grey">Jessica Barnes</h3>
+          <h4 class="grey">Shopify</h4>
+          <p>
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, totam doloremque
+            illum eius cum expedita."
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/all.js"></script>
+  </body>
 </html>
