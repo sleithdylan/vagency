@@ -304,6 +304,113 @@ nav {
   }
 }
 
+// Footer
+.footer {
+  background-color: #7552f6;
+  color: #fff;
+
+  &__content-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  &__legal {
+    text-align: left;
+
+    & .hr {
+      margin-top: 2em;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+
+    & > p {
+      padding: 2em 0 1em 0;
+    }
+  }
+
+  &__info {
+    padding: 2em 0.5em 0.5em;
+
+    & h3 {
+      font-size: 1.4em;
+      font-weight: 700;
+    }
+
+    & > p {
+      padding: 1em 0 1em 0;
+    }
+
+    &__contact {
+      & p {
+        padding-bottom: 2em;
+      }
+    }
+  }
+
+  &__info:first-child {
+    padding-right: 2em;
+  }
+
+  &__contact-email {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & i {
+      padding-right: 0.5em;
+    }
+  }
+
+  &__social {
+    width: 100%;
+    padding-top: 1em;
+
+    & #svg-behance {
+      fill: #ffffff;
+      transition: 0.2s ease-in-out;
+    }
+
+    & #svg-dribbble {
+      fill: #ffffff;
+      transition: 0.2s ease-in-out;
+    }
+
+    & #svg-facebook {
+      fill: #ffffff;
+      transition: 0.2s ease-in-out;
+    }
+
+    & #svg-linkedin {
+      fill: #ffffff;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  &__social-img {
+    margin: 0.5em 1em 0 0;
+  }
+
+  &__links {
+    ul li {
+      padding: 0.3em 0;
+    }
+
+    ul li:first-child {
+      padding-top: 1.2em;
+    }
+
+    ul li a {
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+}
+
 //- Mobile-landscape (and larger)
 //- ----------------------------------------------
 
@@ -373,7 +480,9 @@ nav {
   .hero,
   .services,
   .projects,
-  .testimonials {
+  .testimonials,
+  footer {
+    // padding: 4em 0;
     width: 95%;
     margin: 0 auto;
   }
@@ -585,7 +694,8 @@ nav {
   .hero,
   .services,
   .projects,
-  .testimonials {
+  .testimonials,
+  footer {
     width: 95%;
     margin: 0 auto;
   }
@@ -839,18 +949,14 @@ nav {
 
     // Soft Shadow
     &__card {
-      width: 30%;
+      width: 100%;
 
-      padding: 2em;
+      padding: 2em 0;
       background: white;
       border-radius: 0.4em;
       text-align: center;
       box-shadow: horizontal vertical color;
       box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-
-      &__card:nth-of-type(2) {
-        margin: 2em 2em;
-      }
 
       & span img {
         position: relative;
@@ -879,7 +985,108 @@ nav {
 
       & p {
         color: #969a9e;
-        padding: 0 0 3em;
+        padding: 0 2em 3em;
+      }
+    }
+
+    &__card:nth-of-type(2) {
+      margin: 3.5em 2em;
+    }
+  }
+
+  // Footer
+  .footer {
+    background-color: #7552f6;
+    color: #fff;
+
+    &__content-main {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &__legal {
+      & .hr {
+        margin-top: 2em;
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+      }
+
+      & > p {
+        padding: 2em 0 1em 0;
+      }
+    }
+
+    &__info {
+      padding: 2em 0em 0.5em;
+
+      & h3 {
+        font-size: 1.4em;
+        font-weight: 700;
+      }
+
+      &__contact {
+        & p {
+          padding-bottom: 2em;
+        }
+      }
+    }
+
+    &__contact-email {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      & i {
+        padding-right: 0.5em;
+      }
+    }
+
+    &__social {
+      width: 100%;
+      padding-top: 1em;
+
+      & #svg-behance {
+        fill: #ffffff;
+        transition: 0.2s ease-in-out;
+      }
+
+      & #svg-dribbble {
+        fill: #ffffff;
+        transition: 0.2s ease-in-out;
+      }
+
+      & #svg-facebook {
+        fill: #ffffff;
+        transition: 0.2s ease-in-out;
+      }
+
+      & #svg-linkedin {
+        fill: #ffffff;
+        transition: 0.2s ease-in-out;
+      }
+    }
+
+    &__social-img {
+      margin: 0.5em 1em 0 0;
+    }
+
+    &__links {
+      ul li {
+        padding: 0.3em 0;
+      }
+
+      ul li:first-child {
+        padding-top: 1.2em;
+      }
+
+      ul li a {
+        color: #fff;
+        font-weight: 400;
       }
     }
   }
@@ -921,7 +1128,8 @@ nav {
   .hero,
   .services,
   .projects,
-  .testimonials {
+  .testimonials,
+  footer {
     width: 70%;
     margin: 0 auto;
   }
