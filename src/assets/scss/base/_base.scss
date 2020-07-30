@@ -85,3 +85,31 @@ h1 span {
 .btn--primary:hover {
   background: #9897ee;
 }
+
+.cursor {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background-color: #7552f6;
+  border: 1px solid #7552f6;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  position: fixed;
+  top: -0.6%;
+  left: -0.5%;
+}
+
+.cursorHover {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background-color: rgba(117, 82, 246, 1);
+  border: none;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  position: fixed;
+  top: -0.6%;
+  left: -0.5%;
+}

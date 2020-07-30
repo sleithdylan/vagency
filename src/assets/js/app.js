@@ -87,3 +87,47 @@ $('a[href*="#"]')
       }
     }
   });
+
+// Custom Cursor
+let $cursor = $('.cursor');
+let $cursorHover = $('.cursorHover');
+
+// Move
+function cursorMover(e) {
+  gsap.to($cursor, {
+    x: e.clientX,
+    y: e.clientY,
+  });
+  gsap.to($cursorHover, {
+    x: e.clientX,
+    y: e.clientY,
+  });
+}
+
+// Hover
+function cursorHover(e) {
+  gsap.to($cursor, {
+    scale: 0,
+  });
+  gsap.to($cursorHover, {
+    scale: 5,
+    opacity: 0.25,
+    ease: 'Power2.easeOut',
+  });
+}
+
+// Normal
+function cursor(e) {
+  gsap.to($cursor, {
+    scale: 0,
+  });
+  gsap.to($cursorHover, {
+    scale: 1,
+    opacity: 1,
+    ease: 'Power2.easeOut',
+  });
+}
+
+$(window).on('mousemove', cursorMover);
+$('a').hover(cursorHover, cursor);
+$('img').hover(cursorHover, cursor);
