@@ -130,4 +130,7 @@ function cursor(e) {
 
 $(window).on('mousemove', cursorMover);
 $('a').hover(cursorHover, cursor);
-$('img').hover(cursorHover, cursor);
+$('.services__card').hover(cursorHover, cursor);
+$('.testimonials__card').hover(cursorHover, cursor);
+$('svg').hover(cursorHover, cursor);
+$('.cell').hover(cursorHover, cursor);
