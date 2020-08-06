@@ -38,7 +38,6 @@ img {
 
 a {
   text-decoration: none;
-  // transition: all 0.2s linear;
   font-weight: 700;
 }
 
@@ -69,6 +68,7 @@ h1 span {
   font-weight: 400;
   color: white;
   margin-top: 1em;
+  transition: all 0.2s ease-out;
 }
 
 .grey {
