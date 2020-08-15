@@ -1,6 +1,8 @@
 import { gsap } from 'gsap';
 import AOS from 'aos';
 
+// Initialization
+//- ----------------------------------------------
 AOS.init({
   easing: 'ease-in-out',
   once: true,
@@ -8,6 +10,7 @@ AOS.init({
 });
 
 // Open/Close Hamburger Menu
+//- ----------------------------------------------
 const get = element => document.getElementById(element);
 
 let open = get('menu-btn');
@@ -23,6 +26,7 @@ exit.addEventListener('click', () => {
 });
 
 // Create GSAP Instance
+//- ----------------------------------------------
 var tl = gsap.timeline({ defaults: { duration: 1 } });
 
 tl.from('.logo', { x: -50, opacity: 0 }, '-=.1');
@@ -60,6 +64,7 @@ $(document).ready(function () {
 });
 
 // Smooth Scroll
+//- ----------------------------------------------
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -88,7 +93,8 @@ $('a[href*="#"]')
     }
   });
 
-// Custom Cursor
+// Custom Cursor Primary
+//- ----------------------------------------------
 let $cursor = $('.cursor');
 let $cursorHover = $('.cursorHover');
 
@@ -128,9 +134,84 @@ function cursor(e) {
   });
 }
 
+// Normal Hide
+function cursorHide(e) {
+  gsap.to($cursor, {
+    scale: 0,
+  });
+  gsap.to($cursorHover, {
+    scale: 0,
+    opacity: 0,
+    ease: 'Power2.easeOut',
+  });
+}
+
+// Hover Hide
+function cursorHoverHide(e) {
+  gsap.to($cursor, {
+    scale: 0,
+  });
+  gsap.to($cursorHover, {
+    scale: 0,
+    opacity: 0,
+    ease: 'Power2.easeOut',
+  });
+}
+
 $(window).on('mousemove', cursorMover);
 $('a').hover(cursorHover, cursor);
 $('.services__card').hover(cursorHover, cursor);
 $('.testimonials__card').hover(cursorHover, cursor);
 $('svg').hover(cursorHover, cursor);
 $('.cell').hover(cursorHover, cursor);
+
+// Custom Cursor Primary
+//- ----------------------------------------------
+let $cursorLight = $('.cursorLight');
+let $cursorHoverLight = $('.cursorHoverLight');
+
+// Move
+function cursorMoverLight(e) {
+  gsap.to($cursorLight, {
+    x: e.clientX,
+    y: e.clientY,
+  });
+  gsap.to($cursorHoverLight, {
+    x: e.clientX,
+    y: e.clientY,
+  });
+}
+
+// Hover
+function cursorHoverLight(e) {
+  gsap.to($cursorLight, {
+    scale: 0,
+  });
+  gsap.to($cursorHoverLight, {
+    scale: 5,
+    opacity: 0.25,
+    ease: 'Power2.easeOut',
+  });
+}
+
+// Normal
+function cursorLight(e) {
+  gsap.to($cursorLight, {
+    scale: 0,
+  });
+  gsap.to($cursorHoverLight, {
+    scale: 1,
+    opacity: 1,
+    ease: 'Power2.easeOut',
+  });
+}
+
+$(window).on('mousemove', cursorMoverLight);
+$('a').hover(cursorHoverLight, cursorLight);
+$('svg').hover(cursorHoverLight, cursorLight);
+
+if ($('.footer, a').on('mousemove', cursorMoverLight)) {
+  $('.footer').hover(cursorHoverHide, cursor);
+  $('a').hover(cursorHoverHide, cursorHide);
+  $('svg').hover(cursorHoverHide, cursorHoverHide);
+}

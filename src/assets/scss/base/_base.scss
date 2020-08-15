@@ -113,3 +113,31 @@ h1 span {
   top: -0.6%;
   left: -0.5%;
 }
+
+.cursorLight {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 998;
+  position: fixed;
+  top: -0.6%;
+  left: -0.5%;
+}
+
+.cursorHoverLight {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 998;
+  position: fixed;
+  top: -0.6%;
+  left: -0.5%;
+}
