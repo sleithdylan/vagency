@@ -141,7 +141,6 @@ nav {
   }
 }
 
-//TODO Remove .left and fix styling
 .left p {
   color: #969a9e;
 }
@@ -853,15 +852,6 @@ nav {
     margin-bottom: 5em;
   }
 
-  //TODO Remove .left and fix styling
-  // .left p {
-  //   color: #969a9e;
-  // }
-
-  // .left h2 {
-  //   padding: 0.9em 0;
-  // }
-
   // Services
   .services {
     & .services__content-main {
@@ -871,7 +861,7 @@ nav {
 
     & .services__content-description {
       width: 65%;
-      padding: 0.9em 0 0.9em 0;
+      padding: 1.5em 0 0.9em 0;
       text-align: left;
       align-self: center;
     }
@@ -1154,15 +1144,6 @@ nav {
     margin-bottom: 5em;
   }
 
-  //TODO Remove .left and fix styling
-  // .left p {
-  //   color: #969a9e;
-  // }
-
-  // .left h2 {
-  //   padding: 0.9em 0;
-  // }
-
   // Services
   .services {
     & .services__content-main {
@@ -1172,7 +1153,7 @@ nav {
 
     & .services__content-description {
       width: 65%;
-      padding: 0.9em 0 0.9em 0;
+      padding: 1.5em 0 0.9em 0;
       text-align: left;
       align-self: center;
     }
