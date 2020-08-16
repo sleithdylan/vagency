@@ -175,10 +175,9 @@ nav {
     background: white;
     border-radius: 0.4em;
     text-align: center;
-    box-shadow: horizontal vertical color;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     border-top: #7552f6 6px solid;
     transition: 0.2s ease-in-out;
+    @include soft-shadow;
 
     & h3 {
       font-size: 1.3em;
@@ -266,10 +265,9 @@ nav {
     background: white;
     border-radius: 0.4em;
     text-align: center;
-    box-shadow: horizontal vertical color;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     border-top: #7552f6 6px solid;
     transition: all 0.2s ease-in-out;
+    @include soft-shadow;
 
     & span img {
       position: absolute;
@@ -509,8 +507,7 @@ nav {
       background: white;
       border-radius: 0.4em;
       text-align: center;
-      box-shadow: horizontal vertical color;
-      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+      @include soft-shadow;
 
       & h3 {
         font-size: 1.3em;
@@ -578,8 +575,7 @@ nav {
       background: white;
       border-radius: 0.4em;
       text-align: center;
-      box-shadow: horizontal vertical color;
-      box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.1);
+      @include soft-shadow;
 
       & span img {
         position: absolute;
@@ -720,8 +716,7 @@ nav {
       background: white;
       border-radius: 0.4em;
       text-align: center;
-      box-shadow: horizontal vertical color;
-      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+      @include soft-shadow;
 
       & h3 {
         font-size: 1.3em;
@@ -761,8 +756,7 @@ nav {
       background: white;
       border-radius: 0.4em;
       text-align: center;
-      box-shadow: horizontal vertical color;
-      box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.1);
+      @include soft-shadow;
 
       & span img {
         position: absolute;
@@ -882,8 +876,7 @@ nav {
       background: white;
       border-radius: 0.4em;
       text-align: center;
-      box-shadow: horizontal vertical color;
-      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+      @include soft-shadow;
     }
 
     &__card:nth-of-type(2) {
@@ -957,13 +950,11 @@ nav {
     // Soft Shadow
     &__card {
       width: 100%;
-
       padding: 2em 0;
       background: white;
       border-radius: 0.4em;
       text-align: center;
-      box-shadow: horizontal vertical color;
-      box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.1);
+      @include soft-shadow;
 
       & span img {
         position: relative;
@@ -1185,9 +1176,8 @@ nav {
       background: white;
       border-radius: 0.4em;
       text-align: center;
-      box-shadow: horizontal vertical color;
-      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
       transition: 0.2s ease-in-out;
+      @include soft-shadow;
     }
 
     &__card:nth-of-type(2) {
