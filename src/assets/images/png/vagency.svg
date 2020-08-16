@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="115" viewBox="0 0 150 115">
+  <defs>
+    <clipPath id="clip-custom_1">
+      <rect width="150" height="115"/>
+    </clipPath>
+  </defs>
+  <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
+    <text id="va" transform="translate(-198 -24)" fill="#2b2a35" font-size="120" font-family="Arciform, Arciform Sans" letter-spacing="0.05em"><tspan x="201.8" y="117">va</tspan></text>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="8" cy="8" r="8" transform="translate(129 77)" fill="#7552f6"/>
+  </g>
+</svg>

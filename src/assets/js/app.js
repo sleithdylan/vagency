@@ -162,6 +162,7 @@ function cursorHoverHide(e) {
 // Events
 $(window).on('mousemove', cursorMover);
 $('a').hover(cursorHover, cursor);
+$('i').hover(cursorHover, cursor);
 $('svg').hover(cursorHover, cursor);
 $('.services__card').hover(cursorHover, cursor);
 $('.testimonials__card').hover(cursorHover, cursor);
@@ -212,6 +213,7 @@ function cursorLight(e) {
 // Events
 $(window).on('mousemove', cursorMoverLight);
 $('a').hover(cursorHoverLight, cursorLight);
+$('i').hover(cursorHoverLight, cursorLight);
 $('svg').hover(cursorHoverLight, cursorLight);
 $('.services__card').hover(cursorHoverLight, cursorLight);
 $('.testimonials__card').hover(cursorHoverLight, cursorLight);
