@@ -32,7 +32,7 @@ const gulp = require('gulp'),
   concat = require('gulp-concat'),
   imagemin = require('gulp-imagemin'),
   browserSync = require('browser-sync').create(),
-  pug = require('gulp-pug'),
+  // pug = require('gulp-pug'),
   dependents = require('gulp-dependents'),
   src_folder = './src/',
   src_assets_folder = src_folder + 'assets/',
@@ -54,17 +54,17 @@ gulp.task('html', () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task('pug', () => {
-  return gulp
-    .src([src_folder + 'pug/**/!(_)*.pug'], {
-      base: src_folder + 'pug',
-      since: gulp.lastRun('pug'),
-    })
-    .pipe(plumber())
-    .pipe(pug())
-    .pipe(gulp.dest(dist_folder))
-    .pipe(browserSync.stream());
-});
+// gulp.task('pug', () => {
+//   return gulp
+//     .src([src_folder + 'pug/**/!(_)*.pug'], {
+//       base: src_folder + 'pug',
+//       since: gulp.lastRun('pug'),
+//     })
+//     .pipe(plumber())
+//     .pipe(pug())
+//     .pipe(gulp.dest(dist_folder))
+//     .pipe(browserSync.stream());
+// });
 
 gulp.task('sass', () => {
   return gulp
