@@ -230,8 +230,15 @@ nav {
       & .projects-img {
         border-radius: 0.4em;
         background-position: center;
+        transition: all 0.2s ease-out;
         background-repeat: no-repeat;
         background-size: cover;
+        cursor: pointer;
+        filter: grayscale(100%);
+      }
+
+      & .projects-img:hover {
+        filter: grayscale(0%);
       }
     }
   }
@@ -550,8 +557,15 @@ nav {
         & .projects-img {
           border-radius: 0.4em;
           background-position: center;
+          transition: all 0.2s ease-out;
           background-repeat: no-repeat;
           background-size: cover;
+          cursor: pointer;
+          filter: grayscale(100%);
+        }
+
+        & .projects-img:hover {
+          filter: grayscale(0%);
         }
       }
     }
@@ -925,8 +939,15 @@ nav {
         & .projects-img {
           border-radius: 0.4em;
           background-position: center;
+          transition: all 0.2s ease-out;
           background-repeat: no-repeat;
           background-size: cover;
+          cursor: pointer;
+          filter: grayscale(100%);
+        }
+
+        & .projects-img:hover {
+          filter: grayscale(0%);
         }
       }
     }
