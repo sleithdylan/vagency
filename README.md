@@ -1,13 +1,13 @@
 <br />
 <p align="center">
-  <a href="https://vagency.herokuapp.com">
+  <a href="https://vagency.netlify.app">
     <img src="./src/assets/images/png/vagency.png" alt="vagency logo" width="135" height="100">
   </a>
 
   <h3 align="center">A design agency shaping ideas into products.</h3>
 
   <p align="center">
-    <a href="https://vagency.herokuapp.com">View Demo</a>
+    <a href="https://vagency.netlify.app">View Demo</a>
 </p>
 
 ## Requirements
