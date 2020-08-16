@@ -82,62 +82,62 @@ nav {
 
   #svg-behance {
     fill: #d4d4d4;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-dribbble {
     fill: #d4d4d4;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-squarespace {
     fill: #d4d4d4;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-shopify {
     fill: #d4d4d4;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-paypal {
     fill: #d4d4d4;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-adobe {
     fill: #d4d4d4;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-behance:hover {
     fill: #969a9e;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-dribbble:hover {
     fill: #969a9e;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-squarespace:hover {
     fill: #969a9e;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-shopify:hover {
     fill: #969a9e;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-paypal:hover {
     fill: #969a9e;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   #svg-adobe:hover {
     fill: #969a9e;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 }
 
@@ -176,7 +176,7 @@ nav {
     border-radius: 0.4em;
     text-align: center;
     border-top: #7552f6 6px solid;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
     @include soft-shadow;
 
     & h3 {
@@ -193,7 +193,7 @@ nav {
 
   &__card:hover {
     border-top: #9897ee 6px solid;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
   }
 
   &__service-img {
@@ -266,7 +266,7 @@ nav {
     border-radius: 0.4em;
     text-align: center;
     border-top: #7552f6 6px solid;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
     @include soft-shadow;
 
     & span img {
@@ -371,22 +371,22 @@ nav {
 
     & #svg-behance {
       fill: #ffffff;
-      transition: 0.2s ease-in-out;
+      transition: all 0.2s ease-out;
     }
 
     & #svg-dribbble {
       fill: #ffffff;
-      transition: 0.2s ease-in-out;
+      transition: all 0.2s ease-out;
     }
 
     & #svg-facebook {
       fill: #ffffff;
-      transition: 0.2s ease-in-out;
+      transition: all 0.2s ease-out;
     }
 
     & #svg-linkedin {
       fill: #ffffff;
-      transition: 0.2s ease-in-out;
+      transition: all 0.2s ease-out;
     }
   }
 
@@ -1050,22 +1050,22 @@ nav {
 
       & #svg-behance {
         fill: #ffffff;
-        transition: 0.2s ease-in-out;
+        transition: all 0.2s ease-out;
       }
 
       & #svg-dribbble {
         fill: #ffffff;
-        transition: 0.2s ease-in-out;
+        transition: all 0.2s ease-out;
       }
 
       & #svg-facebook {
         fill: #ffffff;
-        transition: 0.2s ease-in-out;
+        transition: all 0.2s ease-out;
       }
 
       & #svg-linkedin {
         fill: #ffffff;
-        transition: 0.2s ease-in-out;
+        transition: all 0.2s ease-out;
       }
     }
 
@@ -1170,7 +1170,7 @@ nav {
       background: white;
       border-radius: 0.4em;
       text-align: center;
-      transition: 0.2s ease-in-out;
+      transition: all 0.2s ease-out;
       @include soft-shadow;
     }
 
@@ -1220,15 +1220,16 @@ nav {
         & .projects-img {
           border-radius: 0.4em;
           background-position: center;
-          transition: transform 0.2s ease-in-out;
+          transition: all 0.2s ease-out;
           background-repeat: no-repeat;
           background-size: cover;
           cursor: pointer;
+          filter: grayscale(100%);
         }
 
         & .projects-img:hover {
           transform: scale(1.05);
-          background-color: rgba(152, 151, 238, 0.8);
+          filter: grayscale(0%);
         }
       }
     }
