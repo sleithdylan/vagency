@@ -158,8 +158,10 @@ function cursorHoverHide(e) {
   });
 }
 
+// Events
 $(window).on('mousemove', cursorMover);
 $('a').hover(cursorHover, cursor);
+$('svg').hover(cursorHover, cursor);
 $('.services__card').hover(cursorHover, cursor);
 $('.testimonials__card').hover(cursorHover, cursor);
 $('svg').hover(cursorHover, cursor);
@@ -206,12 +208,16 @@ function cursorLight(e) {
   });
 }
 
+// Events
 $(window).on('mousemove', cursorMoverLight);
 $('a').hover(cursorHoverLight, cursorLight);
 $('svg').hover(cursorHoverLight, cursorLight);
+$('.services__card').hover(cursorHoverLight, cursorLight);
+$('.testimonials__card').hover(cursorHoverLight, cursorLight);
+$('.cell').hover(cursorHoverLight, cursorLight);
 
-if ($('.footer, a').on('mousemove', cursorMoverLight)) {
-  $('.footer').hover(cursorHoverHide, cursor);
-  $('a').hover(cursorHoverHide, cursorHide);
-  $('svg').hover(cursorHoverHide, cursorHoverHide);
+if ($('footer').on('mousemove', cursorMoverLight)) {
+  $('.footer').hover(cursorHide, cursor);
+  $('.footer a').hover(cursorHide, cursorHoverHide);
+  $('.footer svg').hover(cursorHide, cursorHoverHide);
 }
