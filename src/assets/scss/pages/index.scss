@@ -1,5 +1,9 @@
 @import '../_includes';
 
+//TODO
+// 1. Fix errors in console (Owl Carousel)
+// 2. Add preloader on page load
+
 //- Mobile-portrait
 //- ----------------------------------------------
 
@@ -193,8 +197,7 @@ nav {
   }
 
   &__card:hover {
-    border-top: #9897ee 6px solid;
-    transition: all 0.2s ease-out;
+    transform: translateY(-20px) !important;
   }
 
   &__service-img {
