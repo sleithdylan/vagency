@@ -1,11 +1,28 @@
 @import '../_includes';
 
 //TODO
-// 1. Fix errors in console (Owl Carousel)
-// 2. Add preloader on page load
+// 1. Add preloader on page load
+// 2. Add transition on page laod (GSAP)
+// 3. Add animation for menu (GSAP)
 
 //- Mobile-portrait
 //- ----------------------------------------------
+
+.cursor {
+  display: none;
+}
+
+.cursorHover {
+  display: none;
+}
+
+.cursorLight {
+  display: none;
+}
+
+.cursorHoverLight {
+  display: none;
+}
 
 // Header
 header {
@@ -1110,6 +1127,62 @@ nav {
 //- ----------------------------------------------
 
 @media (min-width: 1200px) {
+  .cursor {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background-color: #7552f6;
+    border: 1px solid #7552f6;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999;
+    position: fixed;
+    top: -0.6%;
+    left: -0.5%;
+  }
+
+  .cursorHover {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background-color: rgba(117, 82, 246, 1);
+    border: none;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999;
+    position: fixed;
+    top: -0.6%;
+    left: -0.5%;
+  }
+
+  .cursorLight {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 998;
+    position: fixed;
+    top: -0.6%;
+    left: -0.5%;
+  }
+
+  .cursorHoverLight {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 998;
+    position: fixed;
+    top: -0.6%;
+    left: -0.5%;
+  }
+
   .flex {
     display: flex;
   }
