@@ -82,3 +82,7 @@ A quick look at the folder structure of this project.
     │
     └── index.html
 ```
+
+## :bulb: Inspiration
+
+This design was inspired by [Md. Tarik Eamin](https://dribbble.com/shots/6850702-Digital-Agency/).
