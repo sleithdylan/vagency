@@ -55,29 +55,19 @@ A quick look at the folder structure of this project.
 └── src/
     ├── assets/
     │   ├── images/
-    │   │   │
     │   │   ├── jpg/
-    │   │   │
     │   │   ├── png/
-    │   │   │
     │   │   ├── svg/
-    │   │   │
     │   │   └── favicon.ico
     │   │
     │   ├── js/
     │   │
     │   └── scss/
-    │       │
     │       ├── base/
-    │       │
     │       ├── helpers/
-    │       │
     │       ├── modules/
-    │       │
     │       ├── pages/
-    │       │
     │       ├── _includes.scss
-    │       │
     │       └── app.scss
     │
     └── index.html
