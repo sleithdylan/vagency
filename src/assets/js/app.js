@@ -29,9 +29,12 @@ exit.addEventListener('click', () => {
 //- ----------------------------------------------
 var tl = gsap.timeline({ defaults: { duration: 1 } });
 
-tl.from('.logo', { opacity: 0 })
+tl.to('#overlay', { opacity: 0, display: 'none' }, '-=.1')
+  .from('.logo', { opacity: 0 })
   .from('nav', { opacity: 0 }, '-=.8')
-  .from('.stagger', { y: 50, opacity: 0, stagger: 0.7 }, '-=.8') // Fade Up
+  .from('.title-stagger', { y: 50, opacity: 0, stagger: 0.7 }, '-=.8') // Fade Up
+  .from('.description-stagger', { y: 50, opacity: 0, stagger: 0.7 }, '-=.8') // Fade Up
+  .from('.btn-stagger', { y: 50, opacity: 0, stagger: 0.7 }, '-=.8') // Fade Up
   .from('.hero__sponsors', { y: 50, opacity: 0, stagger: 0.7 }, '-=.8') // Fade Up
   .to('h1 span', { clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)' }, '-=.9') // Swipe with Delay
   .from('.hero__content-visual', { scaleX: 0.8, scaleY: 0.8, opacity: 0 }, '-=1'); // Fade Up with Delay
